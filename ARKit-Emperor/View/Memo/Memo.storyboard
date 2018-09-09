@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJ9-tL-xVb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJ9-tL-xVb">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Starjedi.ttf">
+            <string>StarJedi</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Memo View Controller-->
         <scene sceneID="A3g-LC-96o">
@@ -27,7 +32,7 @@
                                     <constraint firstAttribute="width" constant="100" id="6mL-OV-xHN"/>
                                     <constraint firstAttribute="height" constant="60" id="DIl-us-rme"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveMemo:" destination="qJ9-tL-xVb" eventType="touchUpInside" id="pst-pO-mZ9"/>
@@ -40,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="60" id="6Mu-G6-DlA"/>
                                     <constraint firstAttribute="width" constant="100" id="QuC-sp-bS8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                 <state key="normal" title="Load">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

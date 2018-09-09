@@ -13,8 +13,9 @@ class TextNode: SCNNode {
         super.init()
         
         let scnText = SCNText()
-        scnText.extrusionDepth = 3
+        scnText.extrusionDepth = 10
         scnText.chamferRadius = 0.1
+        scnText.font = UIFont(name: "StarJedi", size: 36)
         self.geometry = scnText
         
         self.eulerAngles.x = -.pi/8

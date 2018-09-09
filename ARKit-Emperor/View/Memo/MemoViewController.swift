@@ -37,11 +37,7 @@ class MemoViewController: UIViewController {
         super.viewDidLoad()
         
         sceneView.delegate = self
-        sceneView.showsStatistics = true
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        
-//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-//        sceneView.scene = scene
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture(_:)))
         sceneView.addGestureRecognizer(gesture)
@@ -113,7 +109,7 @@ extension MemoViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if anchor.name == "Memo" {
-            let textNode = TextNode(text: "火曜は燃えるゴミ")
+            let textNode = TextNode(text: "WEDNESDAY")
             node.addChildNode(textNode)
             print("anchor is added")
         }

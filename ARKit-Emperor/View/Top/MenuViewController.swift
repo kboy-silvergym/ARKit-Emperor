@@ -55,7 +55,7 @@ extension MenuViewController: UITableViewDataSource {
         cell.textLabel?.text = menu[indexPath.row]
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .red
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        cell.textLabel?.font = UIFont(name: "StarJedi", size: 20)
         return cell
     }
 }
