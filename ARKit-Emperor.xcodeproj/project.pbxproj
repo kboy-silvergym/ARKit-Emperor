@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA8E21415F54006C4577 /* AppDelegate.swift */; };
 		28C4FA9121415F54006C4577 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9021415F54006C4577 /* art.scnassets */; };
-		28C4FA9321415F54006C4577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA9221415F54006C4577 /* ViewController.swift */; };
+		28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA9221415F54006C4577 /* MemoViewController.swift */; };
 		28C4FA9621415F54006C4577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9421415F54006C4577 /* Main.storyboard */; };
 		28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9721415F55006C4577 /* Assets.xcassets */; };
 		28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */; };
+		28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FAAB2144EF98006C4577 /* MenuViewController.swift */; };
+		28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FAAD2144EFA3006C4577 /* Memo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Emperor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C4FA8E21415F54006C4577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C4FA9021415F54006C4577 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		28C4FA9221415F54006C4577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28C4FA9221415F54006C4577 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		28C4FA9521415F54006C4577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28C4FA9721415F55006C4577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C4FA9A21415F55006C4577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C4FA9C21415F55006C4577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C4FAAB2144EF98006C4577 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		28C4FAAD2144EFA3006C4577 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,89 @@
 		28C4FA8D21415F54006C4577 /* ARKit-Emperor */ = {
 			isa = PBXGroup;
 			children = (
+				28C4FAAA2144EF55006C4577 /* Top */,
+				28C4FAA22144EE1C006C4577 /* Basics */,
+				28C4FAA72144EF05006C4577 /* Stamp */,
+				28C4FAA82144EF27006C4577 /* Doodle */,
+				28C4FAA92144EF37006C4577 /* Picture */,
+				28C4FAA32144EE2A006C4577 /* Memo */,
+				28C4FAA42144EE55006C4577 /* Remote */,
+				28C4FAA52144EE66006C4577 /* Mirror */,
+				28C4FAA62144EE7B006C4577 /* BusinessCard */,
 				28C4FA8E21415F54006C4577 /* AppDelegate.swift */,
 				28C4FA9021415F54006C4577 /* art.scnassets */,
-				28C4FA9221415F54006C4577 /* ViewController.swift */,
-				28C4FA9421415F54006C4577 /* Main.storyboard */,
 				28C4FA9721415F55006C4577 /* Assets.xcassets */,
 				28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */,
 				28C4FA9C21415F55006C4577 /* Info.plist */,
 			);
 			path = "ARKit-Emperor";
+			sourceTree = "<group>";
+		};
+		28C4FAA22144EE1C006C4577 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		28C4FAA32144EE2A006C4577 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				28C4FAAD2144EFA3006C4577 /* Memo.storyboard */,
+				28C4FA9221415F54006C4577 /* MemoViewController.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		28C4FAA42144EE55006C4577 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		28C4FAA52144EE66006C4577 /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+		28C4FAA62144EE7B006C4577 /* BusinessCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessCard;
+			sourceTree = "<group>";
+		};
+		28C4FAA72144EF05006C4577 /* Stamp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stamp;
+			sourceTree = "<group>";
+		};
+		28C4FAA82144EF27006C4577 /* Doodle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Doodle;
+			sourceTree = "<group>";
+		};
+		28C4FAA92144EF37006C4577 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		28C4FAAA2144EF55006C4577 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				28C4FA9421415F54006C4577 /* Main.storyboard */,
+				28C4FAAB2144EF98006C4577 /* MenuViewController.swift */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +207,7 @@
 				28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */,
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
+				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C4FA9321415F54006C4577 /* ViewController.swift in Sources */,
+				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
+				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
