@@ -9,7 +9,7 @@
 import SceneKit
 
 class TextNode: SCNNode {
-    override init() {
+    init(text: String) {
         super.init()
         
         let scnText = SCNText()
@@ -23,6 +23,7 @@ class TextNode: SCNNode {
         self.scale = SCNVector3Make(0.005, 0.005, 0.005)
         
         makeColor(borderColor: .red, backgroundColor: .white)
+        setText(text)
     }
     
     required init?(coder aDecoder: NSCoder) {

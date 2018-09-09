@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJ9-tL-xVb">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJ9-tL-xVb">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,17 +13,62 @@
         <scene sceneID="A3g-LC-96o">
             <objects>
                 <viewController id="qJ9-tL-xVb" customClass="MemoViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="HSB-4V-Vch">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="Qc8-UY-Ri6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhb-Ba-kvJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DL-bX-12u">
+                                <rect key="frame" x="40" y="698" width="100" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6mL-OV-xHN"/>
+                                    <constraint firstAttribute="height" constant="60" id="DIl-us-rme"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveMemo:" destination="qJ9-tL-xVb" eventType="touchUpInside" id="pst-pO-mZ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRH-nV-y1W">
+                                <rect key="frame" x="235" y="698" width="100" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6Mu-G6-DlA"/>
+                                    <constraint firstAttribute="width" constant="100" id="QuC-sp-bS8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Load">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMemo:" destination="qJ9-tL-xVb" eventType="touchUpInside" id="CHz-ea-sQ3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xhb-Ba-kvJ" secondAttribute="bottom" id="HNp-9G-KFK"/>
+                            <constraint firstItem="q4S-1T-x8q" firstAttribute="trailing" secondItem="lRH-nV-y1W" secondAttribute="trailing" constant="40" id="QsA-dN-lQX"/>
+                            <constraint firstItem="q4S-1T-x8q" firstAttribute="bottom" secondItem="7DL-bX-12u" secondAttribute="bottom" constant="20" id="Thu-Gv-qBe"/>
+                            <constraint firstItem="xhb-Ba-kvJ" firstAttribute="trailing" secondItem="q4S-1T-x8q" secondAttribute="trailing" id="Z5a-Im-FvB"/>
+                            <constraint firstItem="7DL-bX-12u" firstAttribute="leading" secondItem="q4S-1T-x8q" secondAttribute="leading" constant="40" id="c0d-so-8gV"/>
+                            <constraint firstItem="xhb-Ba-kvJ" firstAttribute="leading" secondItem="q4S-1T-x8q" secondAttribute="leading" id="f3v-98-3u0"/>
+                            <constraint firstItem="xhb-Ba-kvJ" firstAttribute="top" secondItem="Qc8-UY-Ri6" secondAttribute="top" id="kBF-6N-qi1"/>
+                            <constraint firstItem="q4S-1T-x8q" firstAttribute="bottom" secondItem="lRH-nV-y1W" secondAttribute="bottom" constant="20" id="paM-KW-0dL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q4S-1T-x8q"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="HSB-4V-Vch" id="f5S-cj-b12"/>
+                        <outlet property="sceneView" destination="xhb-Ba-kvJ" id="Hhh-Ak-YR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgb-oB-vdm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="1062"/>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
         </scene>
     </scenes>
 </document>
