@@ -19,8 +19,11 @@ class MemoViewController: UIViewController {
         sceneView.delegate = self
         sceneView.showsStatistics = true
         
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        sceneView.scene = scene
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+//        sceneView.scene = scene
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture(_:)))
+        sceneView.addGestureRecognizer(gesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +37,19 @@ class MemoViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         sceneView.session.pause()
+    }
+    
+    @objc func tapGesture(_ recognizer: UITapGestureRecognizer) {
+        let textNode = TextNode()
+        textNode.setText("こんにちは")
+        
+        let front = SCNVector3Make(0, 0, -0.5)
+        
+        if let cameraNode = sceneView.pointOfView {
+            let position = cameraNode.convertPosition(front, to: nil)
+            textNode.position = position
+            sceneView.scene.rootNode.addChildNode(textNode)
+        }
     }
 }
 
