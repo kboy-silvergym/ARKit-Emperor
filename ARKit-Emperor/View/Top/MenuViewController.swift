@@ -11,7 +11,7 @@ import UIKit
 class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let menu: [String] = ["Basic", "Stamp", "Doodle", "Picture", "Memo"]
+    let menu: [String] = ["Basic", "Stamp", "Doodle", "Picture", "Memo", "Remote"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,12 @@ class MenuViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        
+        // 次へ進むVCの戻るボタンのタイトル非表示
+        let nextbackButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = nextbackButtonItem
+        
+        navigationItem.title = "ARKit-Emperor"
     }
     
     private func goToVC(_ storyboardName: String){
@@ -34,9 +40,20 @@ extension MenuViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0:
             goToVC("Memo")
+        case 1:
+            goToVC("Memo")
+        case 2:
+            goToVC("Memo")
+        case 3:
+            goToVC("Memo")
+        case 4:
+            goToVC("Memo")
+        case 5:
+            goToVC("Remote")
         default:
             break
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -55,7 +72,7 @@ extension MenuViewController: UITableViewDataSource {
         cell.textLabel?.text = menu[indexPath.row]
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .red
-        cell.textLabel?.font = UIFont(name: "StarJedi", size: 20)
+        cell.textLabel?.font = UIFont(name: "StarJedi", size: 17)
         return cell
     }
 }
