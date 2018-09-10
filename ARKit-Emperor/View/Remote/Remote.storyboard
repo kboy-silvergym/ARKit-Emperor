@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bH0-G9-zRu" firstAttribute="top" secondItem="mQL-lq-R1c" secondAttribute="top" id="0gD-en-T5a"/>
                             <constraint firstItem="bH0-G9-zRu" firstAttribute="leading" secondItem="2kF-vE-cQf" secondAttribute="leading" id="Lwe-xF-h6N"/>
