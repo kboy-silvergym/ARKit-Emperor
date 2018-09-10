@@ -132,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				28C4FA8E21415F54006C4577 /* AppDelegate.swift */,
+				28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */,
 				288D3BEF21452D5400855D36 /* Resourse */,
 				288D3BF021452D8B00855D36 /* View */,
 				28C4FA9021415F54006C4577 /* art.scnassets */,
 				28C4FA9721415F55006C4577 /* Assets.xcassets */,
-				28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */,
 				28C4FA9C21415F55006C4577 /* Info.plist */,
 			);
 			path = "ARKit-Emperor";
