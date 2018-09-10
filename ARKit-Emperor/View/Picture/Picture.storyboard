@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4O-Ue-wA9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picture View Controller-->
+        <scene sceneID="SQL-sD-Qpb">
+            <objects>
+                <viewController id="X4O-Ue-wA9" customClass="PictureViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8YC-uy-ZwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMk-Zc-2sC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HMk-Zc-2sC" secondAttribute="bottom" id="BXm-v5-bZu"/>
+                            <constraint firstItem="HMk-Zc-2sC" firstAttribute="top" secondItem="8YC-uy-ZwJ" secondAttribute="top" id="a2g-BN-CZB"/>
+                            <constraint firstItem="HMk-Zc-2sC" firstAttribute="leading" secondItem="bMr-96-HyS" secondAttribute="leading" id="btv-SS-Pe1"/>
+                            <constraint firstItem="HMk-Zc-2sC" firstAttribute="trailing" secondItem="bMr-96-HyS" secondAttribute="trailing" id="slS-fF-szd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bMr-96-HyS"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="HMk-Zc-2sC" id="m2M-oC-ZiS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxE-sy-zIm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+        </scene>
+    </scenes>
+</document>

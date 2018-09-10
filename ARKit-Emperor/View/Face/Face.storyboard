@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q94-pF-bXV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Face View Controller-->
+        <scene sceneID="oz1-hY-gne">
+            <objects>
+                <viewController id="Q94-pF-bXV" customClass="FaceViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tum-6t-nRB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-tB-nra">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hsG-tB-nra" secondAttribute="bottom" id="5uA-YF-goK"/>
+                            <constraint firstItem="hsG-tB-nra" firstAttribute="leading" secondItem="dio-ms-uFP" secondAttribute="leading" id="D62-ft-Z2x"/>
+                            <constraint firstItem="hsG-tB-nra" firstAttribute="top" secondItem="tum-6t-nRB" secondAttribute="top" id="nky-Ag-s5J"/>
+                            <constraint firstItem="hsG-tB-nra" firstAttribute="trailing" secondItem="dio-ms-uFP" secondAttribute="trailing" id="uyi-76-rlv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dio-ms-uFP"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="hsG-tB-nra" id="hdt-L4-XCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zf6-mv-iqb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+        </scene>
+    </scenes>
+</document>

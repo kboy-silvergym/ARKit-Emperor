@@ -11,7 +11,10 @@ import UIKit
 class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let menu: [String] = ["Basic", "Stamp", "Doodle", "Picture", "Memo", "Remote"]
+    let menu: [String] = ["Figure", "Doodle",
+                          "Picture", "Memo",
+                          "Remote", "Mirror",
+                          "BusinessCard", "Face"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +40,8 @@ class MenuViewController: UIViewController {
 extension MenuViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            goToVC("Memo")
-        case 1:
-            goToVC("Memo")
-        case 2:
-            goToVC("Memo")
-        case 3:
-            goToVC("Memo")
-        case 4:
-            goToVC("Memo")
-        case 5:
-            goToVC("Remote")
-        default:
-            break
-        }
+        let name = menu[indexPath.row]
+        goToVC(name)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

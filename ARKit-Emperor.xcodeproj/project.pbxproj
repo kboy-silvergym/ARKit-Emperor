@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281640FB2146B1F000896FFE /* Mirror.storyboard */; };
+		281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281640FD2146B1FB00896FFE /* MirrorViewController.swift */; };
+		281641002146B24000896FFE /* BusinessCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281640FF2146B24000896FFE /* BusinessCard.storyboard */; };
+		281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641012146B25400896FFE /* BusinessCardViewController.swift */; };
+		281641052146B36200896FFE /* Face.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281641042146B36200896FFE /* Face.storyboard */; };
+		281641072146B36D00896FFE /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641062146B36D00896FFE /* FaceViewController.swift */; };
+		281641092146B4A700896FFE /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281641082146B4A700896FFE /* Picture.storyboard */; };
+		2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816410A2146B4BA00896FFE /* Doodle.storyboard */; };
+		2816410D2146B56500896FFE /* Figure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816410C2146B56500896FFE /* Figure.storyboard */; };
+		2816410F2146B56E00896FFE /* FigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816410E2146B56E00896FFE /* FigureViewController.swift */; };
+		281641112146B57800896FFE /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641102146B57800896FFE /* DoodleViewController.swift */; };
+		281641132146B58200896FFE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641122146B58200896FFE /* PictureViewController.swift */; };
 		287176D32144F800000E4470 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287176D22144F800000E4470 /* TextNode.swift */; };
 		288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF121452DA500855D36 /* Starjhol.ttf */; };
 		288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */; };
@@ -24,6 +36,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281640FB2146B1F000896FFE /* Mirror.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mirror.storyboard; sourceTree = "<group>"; };
+		281640FD2146B1FB00896FFE /* MirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
+		281640FF2146B24000896FFE /* BusinessCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessCard.storyboard; sourceTree = "<group>"; };
+		281641012146B25400896FFE /* BusinessCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardViewController.swift; sourceTree = "<group>"; };
+		281641042146B36200896FFE /* Face.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Face.storyboard; sourceTree = "<group>"; };
+		281641062146B36D00896FFE /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		281641082146B4A700896FFE /* Picture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
+		2816410A2146B4BA00896FFE /* Doodle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doodle.storyboard; sourceTree = "<group>"; };
+		2816410C2146B56500896FFE /* Figure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Figure.storyboard; sourceTree = "<group>"; };
+		2816410E2146B56E00896FFE /* FigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureViewController.swift; sourceTree = "<group>"; };
+		281641102146B57800896FFE /* DoodleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
+		281641122146B58200896FFE /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		287176D22144F800000E4470 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 		288D3BF121452DA500855D36 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Star_Jedi_Rounded.ttf; sourceTree = "<group>"; };
@@ -53,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281641032146B2E600896FFE /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				281641042146B36200896FFE /* Face.storyboard */,
+				281641062146B36D00896FFE /* FaceViewController.swift */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
 		288D3BEF21452D5400855D36 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +100,14 @@
 			isa = PBXGroup;
 			children = (
 				28C4FAAA2144EF55006C4577 /* Top */,
-				28C4FAA22144EE1C006C4577 /* Basics */,
-				28C4FAA72144EF05006C4577 /* Stamp */,
+				28C4FAA72144EF05006C4577 /* Figure */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
 				28C4FAA42144EE55006C4577 /* Remote */,
 				28C4FAA52144EE66006C4577 /* Mirror */,
 				28C4FAA62144EE7B006C4577 /* BusinessCard */,
+				281641032146B2E600896FFE /* Face */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,13 +142,6 @@
 			path = "ARKit-Emperor";
 			sourceTree = "<group>";
 		};
-		28C4FAA22144EE1C006C4577 /* Basics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Basics;
-			sourceTree = "<group>";
-		};
 		28C4FAA32144EE2A006C4577 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +164,8 @@
 		28C4FAA52144EE66006C4577 /* Mirror */ = {
 			isa = PBXGroup;
 			children = (
+				281640FB2146B1F000896FFE /* Mirror.storyboard */,
+				281640FD2146B1FB00896FFE /* MirrorViewController.swift */,
 			);
 			path = Mirror;
 			sourceTree = "<group>";
@@ -145,20 +173,26 @@
 		28C4FAA62144EE7B006C4577 /* BusinessCard */ = {
 			isa = PBXGroup;
 			children = (
+				281640FF2146B24000896FFE /* BusinessCard.storyboard */,
+				281641012146B25400896FFE /* BusinessCardViewController.swift */,
 			);
 			path = BusinessCard;
 			sourceTree = "<group>";
 		};
-		28C4FAA72144EF05006C4577 /* Stamp */ = {
+		28C4FAA72144EF05006C4577 /* Figure */ = {
 			isa = PBXGroup;
 			children = (
+				2816410C2146B56500896FFE /* Figure.storyboard */,
+				2816410E2146B56E00896FFE /* FigureViewController.swift */,
 			);
-			path = Stamp;
+			path = Figure;
 			sourceTree = "<group>";
 		};
 		28C4FAA82144EF27006C4577 /* Doodle */ = {
 			isa = PBXGroup;
 			children = (
+				2816410A2146B4BA00896FFE /* Doodle.storyboard */,
+				281641102146B57800896FFE /* DoodleViewController.swift */,
 			);
 			path = Doodle;
 			sourceTree = "<group>";
@@ -166,6 +200,8 @@
 		28C4FAA92144EF37006C4577 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				281641082146B4A700896FFE /* Picture.storyboard */,
+				281641122146B58200896FFE /* PictureViewController.swift */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -238,12 +274,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C4FA9121415F54006C4577 /* art.scnassets in Resources */,
+				281641002146B24000896FFE /* BusinessCard.storyboard in Resources */,
 				288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */,
 				28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */,
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
+				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
+				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
 				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
+				2816410D2146B56500896FFE /* Figure.storyboard in Resources */,
+				281641052146B36200896FFE /* Face.storyboard in Resources */,
+				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
 			);
@@ -257,10 +299,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				287176D32144F800000E4470 /* TextNode.swift in Sources */,
+				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
+				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
+				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
+				2816410F2146B56E00896FFE /* FigureViewController.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
+				281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */,
+				281641112146B57800896FFE /* DoodleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
