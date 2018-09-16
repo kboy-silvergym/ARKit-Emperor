@@ -23,11 +23,15 @@ The Emperor give you the most practical ARKit samples ever.
 
 <img src="https://user-images.githubusercontent.com/17683316/45592370-8b24fe80-b9a5-11e8-8e16-7d4ea620e8f1.gif" width=200>
 
+[Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Memo)
+
 ## Detecting your Remote
 
 ## Mirror
 
 <img src="https://user-images.githubusercontent.com/17683316/45592371-8b24fe80-b9a5-11e8-8b8a-0c35593c75c9.gif" width=200>
+
+[Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Mirror)
 
 ## Business Card
 
