@@ -5,9 +5,9 @@
 
 # What's this?
 
-This is the dark side of [ARKit-Sampler](https://github.com/shu223/ARKit-Sampler) 
+This is the dark side of [ARKit-Sampler](https://github.com/shu223/ARKit-Sampler).
 
-I give you the most practical ARKit samples ever.
+The Emperor give you the most practical ARKit samples ever.
 
 **Unlimited power for ARKit!**
 
