@@ -19,7 +19,7 @@ I give you the most practical ARKit samples ever.
 
 ## Placing pictures
 
-## Persistant Memo
+## Persistent Memo
 
 ## Detecting your Remote
 
