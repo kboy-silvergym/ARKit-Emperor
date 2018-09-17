@@ -14,16 +14,26 @@ class BusinessCardViewController: UIViewController {
     
     let defaultConfiguration: ARWorldTrackingConfiguration = {
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
-        configuration.environmentTexturing = .automatic
+        
+        let images = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil)
+        configuration.detectionImages = images
+        configuration.maximumNumberOfTrackedImages = 1
         return configuration
     }()
+    
+    private var buttonNode: SCNNode!
+    private var card2Node: SCNNode!
+    
+    private let feedback = UIImpactFeedbackGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         sceneView.delegate = self
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        
+        buttonNode = SCNScene(named: "art.scnassets/social_buttons.scn")!.rootNode.childNode(withName: "buttons", recursively: false)
+        
+        feedback.prepare()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,8 +52,25 @@ class BusinessCardViewController: UIViewController {
 
 extension BusinessCardViewController: ARSCNViewDelegate {
     
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard let imageAnchor = anchor as? ARImageAnchor else {
+            return nil
+        }
         
+        switch imageAnchor.referenceImage.name {
+        case "card1" :
+            DispatchQueue.main.async {
+                self.feedback.impactOccurred()
+            }
+            return buttonNode
+        case "card2" :
+            DispatchQueue.main.async {
+                self.feedback.impactOccurred()
+            }
+            return buttonNode
+        default:
+            return nil
+        }
     }
 }
 
