@@ -35,8 +35,9 @@ The Emperor give you the most practical ARKit samples ever.
 
 ## Business Card
 
-If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
+<img src="https://user-images.githubusercontent.com/17683316/45632308-f5d65700-bad7-11e8-914f-a39715741abc.gif" width=200>
 
+If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
 
 ## Face
 
