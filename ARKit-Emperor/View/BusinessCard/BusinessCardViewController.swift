@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import SafariServices
 
 class BusinessCardViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
@@ -50,6 +51,25 @@ class BusinessCardViewController: UIViewController {
         sceneView.session.pause()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let location = touches.first?.location(in: sceneView),
+        let result = sceneView.hitTest(location, options: nil).first else {
+            return
+        }
+        let node = result.node
+        print(node.name)
+        
+        if node.name == "facebook" {
+            let safariVC = SFSafariViewController(url: URL(string: "https://www.facebook.com/kei.fujikawa1")!)
+            self.present(safariVC, animated: true, completion: nil)
+            feedback.impactOccurred()
+        } else if node.name == "twitter" {
+            let safariVC = SFSafariViewController(url: URL(string: "https://twitter.com/kboy_silvergym")!)
+            self.present(safariVC, animated: true, completion: nil)
+            feedback.impactOccurred()
+        }
+    }
+    
 }
 
 extension BusinessCardViewController: ARSCNViewDelegate {
@@ -64,12 +84,16 @@ extension BusinessCardViewController: ARSCNViewDelegate {
             DispatchQueue.main.async {
                 self.feedback.impactOccurred()
             }
+            buttonNode.scale = SCNVector3(0.1, 0.1, 0.1)
+            let scale1 = SCNAction.scale(to: 1.5, duration: 0.2)
+            let scale2 = SCNAction.scale(to: 1, duration: 0.1)
+            scale2.timingMode = .easeOut
+            let group = SCNAction.sequence([scale1, scale2])
+            buttonNode.runAction(group)
+            
             return buttonNode
         case "b" :
-            DispatchQueue.main.async {
-                self.feedback.impactOccurred()
-            }
-            return buttonNode
+            return nil
         default:
             return nil
         }
