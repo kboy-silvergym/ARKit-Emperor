@@ -31,7 +31,9 @@ class BusinessCardViewController: UIViewController {
         
         sceneView.delegate = self
         
-        buttonNode = SCNScene(named: "art.scnassets/social_buttons.scn")!.rootNode.childNode(withName: "buttons", recursively: false)
+        buttonNode = SCNScene(named: "art.scnassets/social_buttons.scn")!.rootNode.childNode(withName: "card", recursively: false)
+        let thumbnailNode = buttonNode.childNode(withName: "thumbnail", recursively: true)
+        thumbnailNode?.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "kboy_profile")
         
         feedback.prepare()
     }
@@ -58,12 +60,12 @@ extension BusinessCardViewController: ARSCNViewDelegate {
         }
         
         switch imageAnchor.referenceImage.name {
-        case "card1" :
+        case "a" :
             DispatchQueue.main.async {
                 self.feedback.impactOccurred()
             }
             return buttonNode
-        case "card2" :
+        case "b" :
             DispatchQueue.main.async {
                 self.feedback.impactOccurred()
             }

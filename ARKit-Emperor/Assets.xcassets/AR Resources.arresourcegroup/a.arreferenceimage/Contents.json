@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "card1.jpg"
+      "filename" : "a.png"
     }
   ],
   "info" : {
@@ -10,7 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 10,
+    "width" : 12,
     "unit" : "centimeters"
   }
 }

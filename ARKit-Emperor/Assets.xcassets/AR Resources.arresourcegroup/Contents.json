@@ -5,10 +5,10 @@
   },
   "resources" : [
     {
-      "filename" : "card1.arreferenceimage"
+      "filename" : "a.arreferenceimage"
     },
     {
-      "filename" : "card2.arreferenceimage"
+      "filename" : "b.arreferenceimage"
     }
   ]
 }
