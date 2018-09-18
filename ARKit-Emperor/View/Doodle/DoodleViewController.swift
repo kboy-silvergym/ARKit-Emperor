@@ -51,14 +51,22 @@ class DoodleViewController: UIViewController {
         if let drawingNode = drawingNode {
             node = drawingNode.clone()
         } else {
-            node = createLine()
+            node = createBallLine()
             drawingNode = node
         }
         node.position = point3D
         sceneView.scene.rootNode.addChildNode(node)
     }
     
-    func createLine() -> SCNNode {
+    func createBallLine() -> SCNNode {
+        let ball = SCNSphere(radius: 0.005)
+        ball.firstMaterial?.diffuse.contents = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        
+        let node = SCNNode(geometry: ball)
+        return node
+    }
+    
+    func createPathLine() -> SCNNode {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: 0.005))
         path.addLine(to: CGPoint(x: 0.005, y: 0))

@@ -15,9 +15,11 @@ The Emperor give you the most practical ARKit samples ever.
 
 ## Doodle (ARKit 1.0~)
 
-Doodle is basic ARKit development used by [Just a line](https://justaline.withgoogle.com/), [Graffity](https://itunes.apple.com/app/id1277452876?mt=8) which is our company's work.
+<img src="images/drawing.gif" width=200>
 
-**WIP**
+You can drawing to real space!
+
+This sample code's perfomance is not perfect becase it add new node every time your finger moves. The best way for good perfomance is adding node only when you start touch screen and update it's geometry during your finger moving. Please reference [Just a line](https://justaline.withgoogle.com/) code.
 
 ## Placing pictures (ARKit 1.0~)
 
