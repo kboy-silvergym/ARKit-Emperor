@@ -19,7 +19,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 You can draw to the real space!
 
-This sample code's perfomance is not perfect becase it add new node every time your finger moves. The best way for good perfomance is adding node only when you start touch screen and update it's geometry during your finger moving. Please reference [Just a line](https://justaline.withgoogle.com/) code.
+This sample code's perfomance is not perfect becase it adds a new node every time your finger moves. The best way I know is adding node only when you start touching screen and update it's geometry during moving your finger. Please refer the [Just a line](https://justaline.withgoogle.com/) code.
 
 ## Placing pictures (ARKit 1.0~)
 
