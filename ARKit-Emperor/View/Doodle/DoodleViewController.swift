@@ -19,6 +19,8 @@ class DoodleViewController: UIViewController {
         return configuration
     }()
     
+    var drawingNode: SCNNode?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +40,39 @@ class DoodleViewController: UIViewController {
         sceneView.session.pause()
     }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let point = touches.first?.location(in: sceneView) else {
+            return
+        }
+        let point3D = sceneView.unprojectPoint(SCNVector3(point.x, point.y, 0.997))
+        
+        let node: SCNNode
+        
+        if let drawingNode = drawingNode {
+            node = drawingNode.clone()
+        } else {
+            node = createLine()
+            drawingNode = node
+        }
+        node.position = point3D
+        sceneView.scene.rootNode.addChildNode(node)
+    }
+    
+    func createLine() -> SCNNode {
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0, y: 0.005))
+        path.addLine(to: CGPoint(x: 0.005, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: -0.005))
+        path.addLine(to: CGPoint(x: -0.005, y: 0))
+        path.close()
+        
+        let shape = SCNShape(path: path, extrusionDepth: 0.01)
+        shape.firstMaterial?.diffuse.contents = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        shape.chamferRadius = 0.005
+        
+        let node = SCNNode(geometry: shape)
+        return node
+    }
 }
 
 extension DoodleViewController: ARSCNViewDelegate {
