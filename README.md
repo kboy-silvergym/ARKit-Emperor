@@ -13,37 +13,59 @@ The Emperor give you the most practical ARKit samples ever.
 
 # Samples
 
-## Placing Figures
-
 ## Doodle
 
+Doodle is basic ARKit development used by [Just a line](https://justaline.withgoogle.com/), [Graffity](https://itunes.apple.com/app/id1277452876?mt=8) which is our company's work.
+
+**WIP**
+
 ## Placing pictures
+
+<img src="images/picture.gif" width=200>
+
+Place your pthoto into the picture frame. You can make picture frames on SceneKit.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
 ## Persistent Memo
 
 <img src="images/memo.gif" width=200>
 
-[Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Memo)
+Using ARKit 2.0, you can save ARWorldMap and load it.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Memo)
 
 ## Detecting your Remote
+
+Using ARKit 2.0,  now you can detect 3D object.
+
+**WIP**
 
 ## Mirror
 
 <img src="images/mirror.gif" width=200>
 
-[Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Mirror)
+Using ARKit 2.0, It's not perfect but the object reflect around the environment.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Mirror)
 
 ## Business Card
 
-|||
+|Show|Tap|
 |:-:|:-:|
 |<img src="images/business_card1.gif" width=200>|<img src="images/business_card2.gif" width=200>|
 
+Augmented business card. If you register the image of your card, ARKit2.0 detects it and the 3D component made in SceneKit can be shown.
+
 If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
 
-[Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
 
 ## Face
+
+Using ARKit2.0, you can detect not only eyes, nose, mouse, but also gaze.
+
+**WIP**
 
 # Author
 

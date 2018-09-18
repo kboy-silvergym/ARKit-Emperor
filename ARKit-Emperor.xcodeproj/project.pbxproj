@@ -15,8 +15,6 @@
 		281641072146B36D00896FFE /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641062146B36D00896FFE /* FaceViewController.swift */; };
 		281641092146B4A700896FFE /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281641082146B4A700896FFE /* Picture.storyboard */; };
 		2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816410A2146B4BA00896FFE /* Doodle.storyboard */; };
-		2816410D2146B56500896FFE /* Figure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816410C2146B56500896FFE /* Figure.storyboard */; };
-		2816410F2146B56E00896FFE /* FigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816410E2146B56E00896FFE /* FigureViewController.swift */; };
 		281641112146B57800896FFE /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641102146B57800896FFE /* DoodleViewController.swift */; };
 		281641132146B58200896FFE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641122146B58200896FFE /* PictureViewController.swift */; };
 		287176D32144F800000E4470 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287176D22144F800000E4470 /* TextNode.swift */; };
@@ -45,8 +43,6 @@
 		281641062146B36D00896FFE /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		281641082146B4A700896FFE /* Picture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
 		2816410A2146B4BA00896FFE /* Doodle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doodle.storyboard; sourceTree = "<group>"; };
-		2816410C2146B56500896FFE /* Figure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Figure.storyboard; sourceTree = "<group>"; };
-		2816410E2146B56E00896FFE /* FigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureViewController.swift; sourceTree = "<group>"; };
 		281641102146B57800896FFE /* DoodleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
 		281641122146B58200896FFE /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		287176D22144F800000E4470 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
@@ -101,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				28C4FAAA2144EF55006C4577 /* Top */,
-				28C4FAA72144EF05006C4577 /* Figure */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
@@ -179,15 +174,6 @@
 				281641012146B25400896FFE /* BusinessCardViewController.swift */,
 			);
 			path = BusinessCard;
-			sourceTree = "<group>";
-		};
-		28C4FAA72144EF05006C4577 /* Figure */ = {
-			isa = PBXGroup;
-			children = (
-				2816410C2146B56500896FFE /* Figure.storyboard */,
-				2816410E2146B56E00896FFE /* FigureViewController.swift */,
-			);
-			path = Figure;
 			sourceTree = "<group>";
 		};
 		28C4FAA82144EF27006C4577 /* Doodle */ = {
@@ -285,7 +271,6 @@
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
 				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
-				2816410D2146B56500896FFE /* Figure.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
@@ -306,7 +291,6 @@
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
-				2816410F2146B56E00896FFE /* FigureViewController.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
 				281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let menu: [String] = ["Figure", "Doodle",
+    let menu: [String] = ["Doodle",
                           "Picture", "Memo",
                           "Remote", "Mirror",
                           "BusinessCard", "Face"]
