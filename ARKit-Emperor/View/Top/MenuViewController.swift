@@ -11,10 +11,15 @@ import UIKit
 class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let menu: [String] = ["Doodle",
-                          "Picture", "Memo",
-                          "Remote", "Mirror",
-                          "BusinessCard", "Face"]
+    let menu: [String] = [
+        "Doodle",
+        "Picture",
+        "Memo",
+        "Mirror",
+        "BusinessCard",
+        "Remote",
+        "Face"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
