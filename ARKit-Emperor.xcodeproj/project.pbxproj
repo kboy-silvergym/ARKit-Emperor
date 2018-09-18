@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280A32B421507566002D8F8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		281640FB2146B1F000896FFE /* Mirror.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mirror.storyboard; sourceTree = "<group>"; };
 		281640FD2146B1FB00896FFE /* MirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
 		281640FF2146B24000896FFE /* BusinessCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessCard.storyboard; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		28C4FA8221415F54006C4577 = {
 			isa = PBXGroup;
 			children = (
+				280A32B421507566002D8F8C /* README.md */,
 				28C4FA8D21415F54006C4577 /* ARKit-Emperor */,
 				28C4FA8C21415F54006C4577 /* Products */,
 			);

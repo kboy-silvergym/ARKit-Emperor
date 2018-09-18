@@ -21,7 +21,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 ## Persistent Memo
 
-<img src="https://user-images.githubusercontent.com/17683316/45592370-8b24fe80-b9a5-11e8-8e16-7d4ea620e8f1.gif" width=200>
+<img src="images/memo.gif" width=200>
 
 [Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Memo)
 
@@ -29,7 +29,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 ## Mirror
 
-<img src="https://user-images.githubusercontent.com/17683316/45592371-8b24fe80-b9a5-11e8-8b8a-0c35593c75c9.gif" width=200>
+<img src="images/mirror.gif" width=200>
 
 [Code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Mirror)
 
@@ -37,7 +37,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 |||
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/17683316/45632308-f5d65700-bad7-11e8-914f-a39715741abc.gif" width=200>|<img src="https://user-images.githubusercontent.com/17683316/45633170-10113480-bada-11e8-842b-725651f50e12.gif" width=200>|
+|<img src="images/business_card1.gif" width=200>|<img src="images/business_card2.gif" width=200>|
 
 If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
 
@@ -47,7 +47,7 @@ If you get the error (`Make sure that all reference images are greater than 100 
 
 # Author
 
-<img src ="https://user-images.githubusercontent.com/17683316/45592081-eacbdb80-b99e-11e8-8086-74e5510e0b96.jpg" width=150>
+<img src ="images/kboy1.jpg" width=150>
 
 **KBOY (Kei Fujikawa)**
 
