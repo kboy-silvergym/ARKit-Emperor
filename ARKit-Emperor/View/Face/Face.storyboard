@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q94-pF-bXV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q94-pF-bXV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,23 +20,33 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-tB-nra">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoI-qs-Lqo">
+                                <rect key="frame" x="239" y="20" width="120" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9zv-m2-fLB"/>
+                                    <constraint firstAttribute="width" constant="120" id="yhz-nL-jGA"/>
+                                </constraints>
+                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hsG-tB-nra" secondAttribute="bottom" id="5uA-YF-goK"/>
                             <constraint firstItem="hsG-tB-nra" firstAttribute="leading" secondItem="dio-ms-uFP" secondAttribute="leading" id="D62-ft-Z2x"/>
+                            <constraint firstItem="JoI-qs-Lqo" firstAttribute="top" secondItem="dio-ms-uFP" secondAttribute="top" id="Gut-R6-6Jv"/>
                             <constraint firstItem="hsG-tB-nra" firstAttribute="top" secondItem="tum-6t-nRB" secondAttribute="top" id="nky-Ag-s5J"/>
+                            <constraint firstItem="dio-ms-uFP" firstAttribute="trailing" secondItem="JoI-qs-Lqo" secondAttribute="trailing" constant="16" id="uor-17-5ve"/>
                             <constraint firstItem="hsG-tB-nra" firstAttribute="trailing" secondItem="dio-ms-uFP" secondAttribute="trailing" id="uyi-76-rlv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dio-ms-uFP"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="hsG-tB-nra" id="hdt-L4-XCu"/>
+                        <outlet property="arSceneView" destination="hsG-tB-nra" id="hdt-L4-XCu"/>
+                        <outlet property="previewSceneView" destination="JoI-qs-Lqo" id="d62-20-i2h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zf6-mv-iqb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+            <point key="canvasLocation" x="100" y="1061.0194902548726"/>
         </scene>
     </scenes>
 </document>
