@@ -59,15 +59,17 @@ If you get the error (`Make sure that all reference images are greater than 100 
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
 
+## Face (ARKit 1.0~)
+
+<img src="images/tongue.gif" width=200>
+
+Using ARKit2.0, you can detect not only eyes, nose, mouse, but also gaze and tongue.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Face)
+
 ## Detecting your Remote (ARKit 2.0~)
 
 Using ARKit 2.0,  now you can detect 3D object.
-
-**WIP**
-
-## Face (ARKit 1.0~)
-
-Using ARKit2.0, you can detect not only eyes, nose, mouse, but also gaze.
 
 **WIP**
 
