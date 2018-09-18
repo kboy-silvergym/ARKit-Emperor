@@ -13,13 +13,13 @@ The Emperor give you the most practical ARKit samples ever.
 
 # Samples
 
-## Doodle
+## Doodle (ARKit 1.0~)
 
 Doodle is basic ARKit development used by [Just a line](https://justaline.withgoogle.com/), [Graffity](https://itunes.apple.com/app/id1277452876?mt=8) which is our company's work.
 
 **WIP**
 
-## Placing pictures
+## Placing pictures (ARKit 1.0~)
 
 <img src="images/picture.gif" width=200>
 
@@ -27,7 +27,7 @@ Place your pthoto into the picture frame. You can make picture frames on SceneKi
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
-## Persistent Memo
+## Persistent Memo (ARKit 2.0~)
 
 <img src="images/memo.gif" width=200>
 
@@ -35,13 +35,13 @@ Using ARKit 2.0, you can save ARWorldMap and load it.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Memo)
 
-## Detecting your Remote
+## Detecting your Remote (ARKit 2.0~)
 
 Using ARKit 2.0,  now you can detect 3D object.
 
 **WIP**
 
-## Mirror
+## Mirror (ARKit 2.0~)
 
 <img src="images/mirror.gif" width=200>
 
@@ -49,7 +49,7 @@ Using ARKit 2.0, It's not perfect but the object reflect around the environment.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Mirror)
 
-## Business Card
+## Business Card (ARKit 2.0~)
 
 |Show|Tap|
 |:-:|:-:|
@@ -61,7 +61,7 @@ If you get the error (`Make sure that all reference images are greater than 100 
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
 
-## Face
+## Face (ARKit 1.0~)
 
 Using ARKit2.0, you can detect not only eyes, nose, mouse, but also gaze.
 
