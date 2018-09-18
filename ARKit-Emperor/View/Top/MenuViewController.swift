@@ -17,8 +17,8 @@ class MenuViewController: UIViewController {
         "Memo",
         "Mirror",
         "BusinessCard",
+        "Face",
         "Remote",
-        "Face"
     ]
     
     override func viewDidLoad() {

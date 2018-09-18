@@ -12,10 +12,8 @@ import ARKit
 class FaceViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     
-    let defaultConfiguration: ARWorldTrackingConfiguration = {
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
-        configuration.environmentTexturing = .automatic
+    let defaultConfiguration: ARFaceTrackingConfiguration = {
+        let configuration = ARFaceTrackingConfiguration()
         return configuration
     }()
     
@@ -43,7 +41,17 @@ class FaceViewController: UIViewController {
 extension FaceViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        
+        guard let faceAnchor = anchor as? ARFaceAnchor else {
+            return
+        }
+        print(faceAnchor.rightEyeTransform)
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        guard let faceAnchor = anchor as? ARFaceAnchor else {
+            return
+        }
+        print(faceAnchor.rightEyeTransform)
     }
 }
 

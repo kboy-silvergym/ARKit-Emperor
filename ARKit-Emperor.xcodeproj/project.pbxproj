@@ -102,8 +102,8 @@
 				28C4FAA32144EE2A006C4577 /* Memo */,
 				28C4FAA52144EE66006C4577 /* Mirror */,
 				28C4FAA62144EE7B006C4577 /* BusinessCard */,
-				28C4FAA42144EE55006C4577 /* Remote */,
 				281641032146B2E600896FFE /* Face */,
+				28C4FAA42144EE55006C4577 /* Remote */,
 			);
 			path = View;
 			sourceTree = "<group>";
