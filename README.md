@@ -23,7 +23,7 @@ Doodle is basic ARKit development used by [Just a line](https://justaline.withgo
 
 <img src="images/picture.gif" width=200>
 
-Place your pthoto into the picture frame. You can make picture frames on SceneKit.
+Place your photo into the picture frame. You can make picture frames on SceneKit.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
