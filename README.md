@@ -17,7 +17,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 <img src="images/drawing.gif" width=200>
 
-You can drawing to real space!
+You can draw to real space!
 
 This sample code's perfomance is not perfect becase it add new node every time your finger moves. The best way for good perfomance is adding node only when you start touch screen and update it's geometry during your finger moving. Please reference [Just a line](https://justaline.withgoogle.com/) code.
 
