@@ -14,10 +14,11 @@ class MenuViewController: UIViewController {
     let menu: [String] = [
         "Doodle",
         "Picture",
+        "PlaneDetection",
+        "Face",
         "Memo",
         "Mirror",
         "BusinessCard",
-        "Face",
         "Remote",
     ]
     

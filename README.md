@@ -31,6 +31,22 @@ Place your photo into the picture frame. You can make picture frames on SceneKit
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
+## Rich Plane Detection (ARKit 1.5~)
+
+<img src="images/plane.gif" width=200>
+
+The plane detection can be available by ARKit 1.0, but this richer detection is available by 1.5.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/PlaneDetection)
+
+## Face (ARKit 1.0~)
+
+<img src="images/tongue.gif" width=200>
+
+By ARKit2.0, you can detect also gaze and tongue. This demo is using tongue detection.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Face)
+
 ## Persistent Memo (ARKit 2.0~)
 
 <img src="images/memo.gif" width=200>
@@ -58,14 +74,6 @@ Augmented business card. If you register the image of your card, ARKit2.0 detect
 If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
-
-## Face (ARKit 1.0~)
-
-<img src="images/tongue.gif" width=200>
-
-Using ARKit2.0, you can detect not only eyes, nose, mouse, but also gaze and tongue.
-
-The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Face)
 
 ## Detecting your Remote (ARKit 2.0~)
 

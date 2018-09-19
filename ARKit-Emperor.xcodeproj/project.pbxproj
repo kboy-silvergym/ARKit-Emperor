@@ -23,6 +23,8 @@
 		288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF321452DA500855D36 /* Starjedi.ttf */; };
 		289C33EE2146A19C00643301 /* Remote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289C33ED2146A19C00643301 /* Remote.storyboard */; };
 		289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289C33EF2146A1A800643301 /* RemoteViewController.swift */; };
+		28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */; };
+		28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */; };
 		28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA8E21415F54006C4577 /* AppDelegate.swift */; };
 		28C4FA9121415F54006C4577 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9021415F54006C4577 /* art.scnassets */; };
 		28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA9221415F54006C4577 /* MemoViewController.swift */; };
@@ -51,6 +53,8 @@
 		288D3BF321452DA500855D36 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		289C33ED2146A19C00643301 /* Remote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Remote.storyboard; sourceTree = "<group>"; };
 		289C33EF2146A1A800643301 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
+		28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
+		28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Emperor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C4FA8E21415F54006C4577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C4FA9021415F54006C4577 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -99,13 +103,23 @@
 				28C4FAAA2144EF55006C4577 /* Top */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
 				28C4FAA92144EF37006C4577 /* Picture */,
+				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
+				281641032146B2E600896FFE /* Face */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
 				28C4FAA52144EE66006C4577 /* Mirror */,
 				28C4FAA62144EE7B006C4577 /* BusinessCard */,
-				281641032146B2E600896FFE /* Face */,
 				28C4FAA42144EE55006C4577 /* Remote */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		28ABE77A2151DA7900EF50E1 /* PlaneDetection */ = {
+			isa = PBXGroup;
+			children = (
+				28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */,
+				28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */,
+			);
+			path = PlaneDetection;
 			sourceTree = "<group>";
 		};
 		28C4FA8221415F54006C4577 = {
@@ -270,6 +284,7 @@
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
+				28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */,
 				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
@@ -290,6 +305,7 @@
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
+				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
