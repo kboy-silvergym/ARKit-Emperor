@@ -2,6 +2,12 @@
 
 ![arkit](https://img.shields.io/badge/ARKit-2.0-brightgreen.svg) ![platform](https://img.shields.io/badge/platform-ios-blue.svg) ![ios](https://img.shields.io/badge/ios-11.0%2B-blue.svg) ![swift](https://img.shields.io/badge/swift-4.2-orange.svg) ![license](https://img.shields.io/badge/license-MIT-lightgrey.svg)
  <a href="https://twitter.com/kboy_silvergym">![tw](https://img.shields.io/badge/twitter-%40kboy__silvergym-blue.svg)</a>
+ 
+A long time ago in a galaxy, far, far away...
+
+It is a period when iPhone SE and iPhone X were destroyed from the apple store, the AR market was under pressure by the Pokemon GO. 
+
+During the Battle, Rebel spies managed to steal the data of the secret plans of ARKit 2.0...
 
 # What's this?
 
