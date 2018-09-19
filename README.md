@@ -69,9 +69,11 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Detecting your Remote (ARKit 2.0~)
 
-Using ARKit 2.0,  now you can detect 3D object.
+<img src="images/remote.gif" width=200>
 
-**WIP**
+Using ARKit 2.0,  now you can scan 3D object.
+
+The code is **WIP**. Wait a few days to be completed..
 
 # Author
 

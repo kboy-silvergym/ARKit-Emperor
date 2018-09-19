@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OVe-rN-b8f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OVe-rN-b8f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +20,20 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH0-G9-zRu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-uu-hgp">
+                                <rect key="frame" x="157.5" y="607" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.7843137255" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PbQ-vo-qWq"/>
+                                    <constraint firstAttribute="width" constant="60" id="smH-IY-qTK"/>
+                                </constraints>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanButtonTapped:" destination="OVe-rN-b8f" eventType="touchUpInside" id="vt8-hC-cMu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -27,6 +41,8 @@
                             <constraint firstItem="bH0-G9-zRu" firstAttribute="leading" secondItem="2kF-vE-cQf" secondAttribute="leading" id="Lwe-xF-h6N"/>
                             <constraint firstAttribute="bottom" secondItem="bH0-G9-zRu" secondAttribute="bottom" id="WKb-NX-9lo"/>
                             <constraint firstItem="bH0-G9-zRu" firstAttribute="trailing" secondItem="2kF-vE-cQf" secondAttribute="trailing" id="aZs-qY-knB"/>
+                            <constraint firstItem="pBd-uu-hgp" firstAttribute="centerX" secondItem="mQL-lq-R1c" secondAttribute="centerX" id="h8x-pS-qB4"/>
+                            <constraint firstItem="2kF-vE-cQf" firstAttribute="bottom" secondItem="pBd-uu-hgp" secondAttribute="bottom" constant="20" id="sRr-JR-LHQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2kF-vE-cQf"/>
                     </view>
@@ -36,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcP-Wi-GbU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+            <point key="canvasLocation" x="100" y="1061.0194902548726"/>
         </scene>
     </scenes>
 </document>
