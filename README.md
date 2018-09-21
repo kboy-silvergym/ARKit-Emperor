@@ -39,7 +39,9 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Rich Plane Detection (ARKit 1.5~)
 
-<img src="images/plane.gif" width=200>
+|horizontal|vertical|
+|:--:|:--:|
+|<img src="images/plane.gif" width=200>|<img src="images/plane2.gif" width=200>|
 
 The plane detection can be available by ARKit 1.0, but this richer detection is available by 1.5.
 
