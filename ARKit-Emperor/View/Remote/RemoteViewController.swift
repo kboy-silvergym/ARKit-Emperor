@@ -12,8 +12,8 @@ import ARKit
 class RemoteViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     
-    let defaultConfiguration: ARWorldTrackingConfiguration = {
-        let configuration = ARWorldTrackingConfiguration()
+    let defaultConfiguration: ARObjectScanningConfiguration = {
+        let configuration = ARObjectScanningConfiguration()
         configuration.planeDetection = .horizontal
         return configuration
     }()
