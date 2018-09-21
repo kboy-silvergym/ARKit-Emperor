@@ -25,7 +25,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 You can draw to the real space!
 
-This sample code's perfomance is not perfect becase it adds a new node every time your finger moves. The best way I know is adding node only when you start touching screen and update it's geometry during moving your finger. Please refer the [Just a line](https://justaline.withgoogle.com/) code.
+This sample code's perfomance is not perfect because it adds a new node every time your finger moves. The best way I know is adding node only when you start touching screen and update it's geometry during moving your finger. Please refer the [Just a line](https://justaline.withgoogle.com/) code.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Doodle)
 
@@ -99,3 +99,7 @@ iOS Developer in Tokyo Japan, working on AR startup named [Graffity Inc.](https:
 
 - [Twitter](https://twitter.com/kboy_silvergym) / [Facebook](https://www.facebook.com/kei.fujikawa1)
 - [LinkedIn](https://www.linkedin.com/in/kei-fujikawa) / [Wantedly](https://www.wantedly.com/users/17820205)
+
+# Special Thanks
+
+The thumbnail is designed by [@shujihirai](https://twitter.com/shujihirai)
