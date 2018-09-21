@@ -91,6 +91,10 @@ Using ARKit 2.0,  now you can scan 3D object.
 
 The code is **WIP**. Wait a few days to be completed..
 
+Note that the Apple doesn't recommend you to use ARObjectScanningConfiguration on productions.
+
+>ARObjectScanningConfiguration is for use only in development scenarios. High-fidelity spatial mapping has a high performance and energy cost, and disables ARKit features not necessary for reference object scanning. To produce AR experiences for end users, use ARWorldTrackingConfiguration. https://developer.apple.com/documentation/arkit/arobjectscanningconfiguration
+
 # Author
 
 <img src ="images/kboy1.jpg" width=150>
