@@ -47,6 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="2kF-vE-cQf"/>
                     </view>
                     <connections>
+                        <outlet property="scanButton" destination="pBd-uu-hgp" id="Gb1-2S-9zB"/>
                         <outlet property="sceneView" destination="bH0-G9-zRu" id="PEc-bO-OZw"/>
                     </connections>
                 </viewController>

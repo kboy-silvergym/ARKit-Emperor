@@ -11,6 +11,7 @@ import ARKit
 
 class RemoteViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var scanButton: UIButton!
     
     let defaultConfiguration: ARObjectScanningConfiguration = {
         let configuration = ARObjectScanningConfiguration()
@@ -31,10 +32,16 @@ class RemoteViewController: UIViewController {
         }
     }()
     
+    private lazy var feedbackGenerator = UINotificationFeedbackGenerator()
     private var boundingBoxNode: SCNNode?
-    private var detectedNodes: [SCNNode] = []
-    
+    private var fixedNode: SCNNode?
     private let boxExtent: float3 = float3(0.1, 0.05, 0.2)
+    private var isScanning: Bool = false {
+        didSet {
+            scanButton.isEnabled = isScanning
+            scanButton.alpha = isScanning ? 1.0 : 0.3
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +49,24 @@ class RemoteViewController: UIViewController {
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         sceneView.preferredFramesPerSecond = 30
+        
+        scanButton.isEnabled = false
+        scanButton.alpha = 0.5
+        
+        feedbackGenerator.prepare()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        sceneView.session.run(defaultConfiguration)
+        do {
+            let object = try ARReferenceObject(archiveURL: objectSaveURL)
+            let configuration = ARWorldTrackingConfiguration()
+            configuration.detectionObjects = [object]
+            self.sceneView.session.run(configuration)
+        } catch {
+            sceneView.session.run(defaultConfiguration)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -57,16 +76,19 @@ class RemoteViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let fixedBoxNode = boundingBoxNode?.clone() {
-            fixedBoxNode.opacity = 0.8
+        if isScanning {
+            self.fixedNode?.removeFromParentNode()
+        } else {
             
-            // TODO: show keyboard to add name ?
-            fixedBoxNode.name = "detectedRemote"
-            
-            detectedNodes.append(fixedBoxNode)
-            
-            self.sceneView.scene.rootNode.addChildNode(fixedBoxNode)
+            if let fixedBoxNode = boundingBoxNode?.clone() {
+                fixedBoxNode.opacity = 0.6
+                fixedBoxNode.name = "detectedRemote"
+                self.fixedNode = fixedBoxNode
+                self.sceneView.scene.rootNode.addChildNode(fixedBoxNode)
+                self.feedbackGenerator.notificationOccurred(.success)
+            }
         }
+        isScanning = !isScanning
     }
     
     private func showOKDialog(title: String, message: String? = nil, ok: String = "OK", completion: (() -> Void)? = nil){
@@ -80,23 +102,13 @@ class RemoteViewController: UIViewController {
         }
     }
     
-    // FIXME:
-    private func setReferenceObject(_ object: ARReferenceObject) {
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.detectionObjects = [object]
-        self.sceneView.session.run(configuration)
-    }
-    
     private func createOrMoveBox(screenPos: CGPoint) {
         if let boundingBox = self.boundingBoxNode {
             guard let result = sceneView.hitTest(screenPos, types: .existingPlane).first else {
                 return
             }
             let float3 = result.worldTransform.translation
-            var position = SCNVector3(float3)
-            
-            // half of box's height
-            position.z += boxExtent.y / 2
+            let position = SCNVector3(float3)
             boundingBox.position = position
             
             if let camera = sceneView.pointOfView {
@@ -106,8 +118,12 @@ class RemoteViewController: UIViewController {
             
             if let node = createNewBox(screenPos: screenPos) {
                 self.boundingBoxNode = node
-                self.sceneView.scene.rootNode.addChildNode(node)
             }
+        }
+        
+        if let boundingBox = boundingBoxNode,
+            boundingBoxNode?.parent == nil {
+            self.sceneView.scene.rootNode.addChildNode(boundingBox)
         }
     }
     
@@ -136,7 +152,7 @@ class RemoteViewController: UIViewController {
     }
 
     @IBAction func scanButtonTapped(_ sender: Any) {
-        if let node = detectedNodes.first {
+        if let node = fixedNode {
             sceneView.session.createReferenceObject(
                 transform: node.simdTransform,
                 center: float3(node.position),
@@ -164,6 +180,10 @@ class RemoteViewController: UIViewController {
 extension RemoteViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        guard !isScanning else {
+            self.boundingBoxNode?.removeFromParentNode()
+            return
+        }
         DispatchQueue.main.async {
             let pos = self.sceneView.center
             self.createOrMoveBox(screenPos: pos)
@@ -173,6 +193,7 @@ extension RemoteViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if let objectAnchor = anchor as? ARObjectAnchor {
             print("detected!: \(anchor.name)")
+            
         }
     }
 }
