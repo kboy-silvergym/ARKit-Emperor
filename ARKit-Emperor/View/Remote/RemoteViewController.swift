@@ -40,6 +40,13 @@ class RemoteViewController: UIViewController {
         sceneView.session.pause()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let fixedBoxNode = boundingBoxNode?.clone() {
+            fixedBoxNode.opacity = 0.8
+            self.sceneView.scene.rootNode.addChildNode(fixedBoxNode)
+        }
+    }
+    
     private func createReferenceObject(completionHandler creationFinished: @escaping (ARReferenceObject?) -> Void) {
         guard let boundingBox = boundingBoxNode else {
             creationFinished(nil)
@@ -66,27 +73,34 @@ class RemoteViewController: UIViewController {
         self.sceneView.session.run(configuration)
     }
     
-    private func createOrMoveBoundingBox(screenPos: CGPoint) {
+    private func createOrMoveBox(screenPos: CGPoint) {
         if let boundingBox = self.boundingBoxNode {
             guard let result = sceneView.hitTest(screenPos, types: .existingPlane).first else {
                 return
             }
             let float3 = result.worldTransform.translation
-            let position = SCNVector3(float3)
+            var position = SCNVector3(float3)
+            
+            // half of box's height
+            position.z += 0.025
             boundingBox.position = position
             
             if let camera = sceneView.pointOfView {
                 boundingBox.eulerAngles.y = camera.eulerAngles.y
             }
         } else {
-            createBoundingBox(screenPos: screenPos)
+            
+            if let node = createNewBox(screenPos: screenPos) {
+                self.boundingBoxNode = node
+                self.sceneView.scene.rootNode.addChildNode(node)
+            }
         }
     }
     
-    private func createBoundingBox(screenPos: CGPoint) {
+    private func createNewBox(screenPos: CGPoint) -> SCNNode? {
         guard let result = sceneView.hitTest(screenPos,
                                              types: .existingPlane).first else {
-            return
+            return nil
         }
         let boundingBoxNode = SCNNode()
         let box = SCNBox(width: 0.1, height: 0.05, length: 0.2, chamferRadius: 0)
@@ -94,12 +108,14 @@ class RemoteViewController: UIViewController {
         boundingBoxNode.geometry = box
         boundingBoxNode.opacity = 0.25
         
-        self.boundingBoxNode = boundingBoxNode
-        self.sceneView.scene.rootNode.addChildNode(boundingBoxNode)
-        
         let float3 = result.worldTransform.translation
         let position = SCNVector3(float3)
         boundingBoxNode.position = position
+        
+        if let camera = sceneView.pointOfView {
+            boundingBoxNode.eulerAngles.y = camera.eulerAngles.y
+        }
+        return boundingBoxNode
     }
 
     @IBAction func scanButtonTapped(_ sender: Any) {
@@ -116,7 +132,7 @@ extension RemoteViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         DispatchQueue.main.async {
             let pos = self.sceneView.center
-            self.createOrMoveBoundingBox(screenPos: pos)
+            self.createOrMoveBox(screenPos: pos)
         }
     }
     
