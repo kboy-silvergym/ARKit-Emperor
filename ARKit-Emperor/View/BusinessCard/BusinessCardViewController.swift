@@ -13,11 +13,23 @@ import SafariServices
 class BusinessCardViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     
+    // NOTE: The imageConfiguration is better for tracking images,
+    // but it has less features,
+    // for example it does not have the plane detection.
     let defaultConfiguration: ARWorldTrackingConfiguration = {
         let configuration = ARWorldTrackingConfiguration()
         
         let images = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil)
         configuration.detectionImages = images
+        configuration.maximumNumberOfTrackedImages = 1
+        return configuration
+    }()
+    
+    let imageConfiguration: ARImageTrackingConfiguration = {
+        let configuration = ARImageTrackingConfiguration()
+        
+        let images = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil)
+        configuration.trackingImages = images!
         configuration.maximumNumberOfTrackedImages = 1
         return configuration
     }()
@@ -42,7 +54,7 @@ class BusinessCardViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        sceneView.session.run(defaultConfiguration)
+        sceneView.session.run(imageConfiguration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
