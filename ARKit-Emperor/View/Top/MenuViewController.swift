@@ -16,6 +16,7 @@ class MenuViewController: UIViewController {
         "Picture",
         "PlaneDetection",
         "Face",
+        "Physics",
         "Memo",
         "Mirror",
         "BusinessCard",

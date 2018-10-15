@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KK7-U2-37m">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Physics View Controller-->
+        <scene sceneID="07K-NO-llh">
+            <objects>
+                <viewController id="KK7-U2-37m" customClass="PhysicsViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Pl-QP-Hj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0E-14-AdX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-Gz-LaX">
+                                <rect key="frame" x="16" y="794" width="382" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="KK7-U2-37m" eventType="valueChanged" id="1OR-nM-da1"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y0E-14-AdX" firstAttribute="top" secondItem="7Pl-QP-Hj6" secondAttribute="top" id="9qc-CK-eNt"/>
+                            <constraint firstItem="y0E-14-AdX" firstAttribute="leading" secondItem="hiX-NP-U3J" secondAttribute="leading" id="JJI-gt-NIN"/>
+                            <constraint firstItem="hiX-NP-U3J" firstAttribute="bottom" secondItem="8c0-Gz-LaX" secondAttribute="bottom" constant="40" id="Uwc-46-tJ7"/>
+                            <constraint firstAttribute="bottom" secondItem="y0E-14-AdX" secondAttribute="bottom" id="c7d-t2-fKT"/>
+                            <constraint firstItem="hiX-NP-U3J" firstAttribute="trailing" secondItem="8c0-Gz-LaX" secondAttribute="trailing" constant="16" id="j8a-EB-gcj"/>
+                            <constraint firstItem="8c0-Gz-LaX" firstAttribute="leading" secondItem="hiX-NP-U3J" secondAttribute="leading" constant="16" id="kgm-to-WEa"/>
+                            <constraint firstItem="y0E-14-AdX" firstAttribute="trailing" secondItem="hiX-NP-U3J" secondAttribute="trailing" id="vks-Tm-YOj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hiX-NP-U3J"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="y0E-14-AdX" id="u3c-5O-tA7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5t-t3-2Jj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+        </scene>
+    </scenes>
+</document>

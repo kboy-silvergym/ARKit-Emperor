@@ -25,6 +25,9 @@
 		289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289C33EF2146A1A800643301 /* RemoteViewController.swift */; };
 		28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */; };
 		28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */; };
+		28B71A6D2174A9AD004153B4 /* Physics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B71A6C2174A9AD004153B4 /* Physics.storyboard */; };
+		28B71A6F2174A9CD004153B4 /* PhysicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B71A6E2174A9CD004153B4 /* PhysicsViewController.swift */; };
+		28B71A712174AA0A004153B4 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B71A702174AA0A004153B4 /* BallNode.swift */; };
 		28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA8E21415F54006C4577 /* AppDelegate.swift */; };
 		28C4FA9121415F54006C4577 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9021415F54006C4577 /* art.scnassets */; };
 		28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA9221415F54006C4577 /* MemoViewController.swift */; };
@@ -55,6 +58,9 @@
 		289C33EF2146A1A800643301 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
 		28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
 		28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
+		28B71A6C2174A9AD004153B4 /* Physics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Physics.storyboard; sourceTree = "<group>"; };
+		28B71A6E2174A9CD004153B4 /* PhysicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsViewController.swift; sourceTree = "<group>"; };
+		28B71A702174AA0A004153B4 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
 		28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Emperor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C4FA8E21415F54006C4577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C4FA9021415F54006C4577 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 				28C4FAA92144EF37006C4577 /* Picture */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
+				28B71A6B2174A999004153B4 /* Physics */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
 				28C4FAA52144EE66006C4577 /* Mirror */,
 				28C4FAA62144EE7B006C4577 /* BusinessCard */,
@@ -120,6 +127,16 @@
 				28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */,
 			);
 			path = PlaneDetection;
+			sourceTree = "<group>";
+		};
+		28B71A6B2174A999004153B4 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				28B71A6C2174A9AD004153B4 /* Physics.storyboard */,
+				28B71A6E2174A9CD004153B4 /* PhysicsViewController.swift */,
+				28B71A702174AA0A004153B4 /* BallNode.swift */,
+			);
+			path = Physics;
 			sourceTree = "<group>";
 		};
 		28C4FA8221415F54006C4577 = {
@@ -287,6 +304,7 @@
 				28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */,
 				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
+				28B71A6D2174A9AD004153B4 /* Physics.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
@@ -304,9 +322,11 @@
 				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
+				28B71A6F2174A9CD004153B4 /* PhysicsViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
 				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
+				28B71A712174AA0A004153B4 /* BallNode.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
 				281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */,
