@@ -41,7 +41,7 @@ class PhysicsViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         
         guard let camera = sceneView.pointOfView else { return }
-        let cameraPosition = SCNVector3(0, 0, -10)
+        let cameraPosition = SCNVector3(0, 0, -2)
         let targetPosition = camera.convertPosition(cameraPosition, to: nil)
         let startPos: SCNVector3 = camera.convertPosition(SCNVector3Make(0, 0, -0.1), to: nil)
         showBubble(by: startPos, to: targetPosition)
@@ -51,7 +51,7 @@ class PhysicsViewController: UIViewController {
         let node = getBallNode()
         node.position = by
         
-        let move = SCNAction.move(to: to, duration: 4.0)
+        let move = SCNAction.move(to: to, duration: 5.0)
         move.timingMode = .easeIn
         node.runAction(move, completionHandler: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
@@ -65,26 +65,43 @@ class PhysicsViewController: UIViewController {
         switch self.segment {
         case 0:
             let node = BallNode()
-            node.setColor(color: .red)
+            node.setColor(color: .cyan)
             return node
         case 1:
             let node = BallNode()
-            node.setColor(color: .blue)
+            node.setColor(color: .cyan)
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.lightingModel = .physicallyBased
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.roughness.contents = 1.0
             return node
         case 2:
             let node = BallNode()
-            node.setColor(color: .yellow)
+            node.setColor(color: .cyan)
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.lightingModel = .physicallyBased
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.metalness.contents = 1.0
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.reflective.contents = 1.0
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.selfIllumination.contents = UIColor.white
             return node
         case 3:
             let node = BallNode()
-            node.setColor(color: .green)
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.diffuse.contents = UIColor.cyan.withAlphaComponent(0.5)
             return node
         case 4:
             let node = BallNode()
-            node.setColor(color: .cyan)
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "blue_paint.jpg")
             return node
         default:
-            return BallNode()
+            let node = BallNode()
+            node.childNodes.first?.childNodes.first?.geometry?
+                .firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "nuno.jpg")
+            return node
         }
     }
     
