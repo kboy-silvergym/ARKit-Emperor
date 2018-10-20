@@ -20,20 +20,22 @@ class ThreeDModelViewController: UIViewController {
         return configuration
     }()
     
-    private var planeNode: SCNNode?
+    private lazy var planeNode: SCNNode = createPlaneNode()
     private lazy var flamingoNode: SCNNode = {
         let scene = SCNScene(named: "art.scnassets/flamingo.scn")
         let node = scene!.rootNode
         return node
     }()
     
+    lazy var feedback = UINotificationFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadUsdz()
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
+        feedback.prepare()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +58,15 @@ class ThreeDModelViewController: UIViewController {
         let float3 = result.worldTransform.translation
         let position = SCNVector3(float3)
         flamingoNode.position = position
+        flamingoNode.scale = SCNVector3(0.01, 0.01, 0.01)
         sceneView.scene.rootNode.addChildNode(flamingoNode)
+        feedback.notificationOccurred(.success)
+        
+        let scaleAction = SCNAction.scale(by: 100, duration: 0.4)
+        let rotateAction = SCNAction.rotateBy(x: 0, y: 1, z: 0, duration: .pi/2)
+        rotateAction.duration = 0.4
+        let action = SCNAction.group([scaleAction, rotateAction])
+        flamingoNode.runAction(action)
     }
     
     func loadUsdz() {
@@ -71,14 +81,8 @@ class ThreeDModelViewController: UIViewController {
         }
         let float3 = result.worldTransform.translation
         let position = SCNVector3(float3)
-        
-        if let planeNode = self.planeNode {
-            planeNode.position = position
-        } else {
-            self.planeNode = createPlaneNode()
-            self.planeNode!.position = position
-            self.sceneView.scene.rootNode.addChildNode(planeNode!)
-        }
+        planeNode.position = position
+        sceneView.scene.rootNode.addChildNode(planeNode)
     }
     
     private func createPlaneNode() -> SCNNode {
