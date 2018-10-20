@@ -10,7 +10,7 @@ import UIKit
 import ARKit
 import SceneKit.ModelIO
 
-class ThreeDModelViewController: UIViewController {
+class ActionViewController: UIViewController {
     @IBOutlet weak var sceneView: ARSCNView!
     
     let defaultConfiguration: ARWorldTrackingConfiguration = {
@@ -69,12 +69,6 @@ class ThreeDModelViewController: UIViewController {
         flamingoNode.runAction(action)
     }
     
-    func loadUsdz() {
-//        guard let url = Bundle.main.url(forResource: "flamingo", withExtension: "usdz") else { fatalError() }
-//        let mdlAsset = MDLAsset(url: url)
-//        let scene = SCNScene(mdlAsset: mdlAsset)
-    }
-    
     private func createOrMoveBox(screenPos: CGPoint) {
         guard let result = sceneView.hitTest(screenPos, types: .existingPlane).first else {
             return
@@ -97,7 +91,7 @@ class ThreeDModelViewController: UIViewController {
     
 }
 
-extension ThreeDModelViewController: ARSCNViewDelegate {
+extension ActionViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         DispatchQueue.main.async {

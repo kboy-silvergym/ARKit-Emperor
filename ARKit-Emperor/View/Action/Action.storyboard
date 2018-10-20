@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ThreeD Model View Controller-->
+        <!--Action View Controller-->
         <scene sceneID="BOu-ZS-I9I">
             <objects>
-                <viewController id="Qhp-7v-rcP" customClass="ThreeDModelViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qhp-7v-rcP" customClass="ActionViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MAH-eQ-iwV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

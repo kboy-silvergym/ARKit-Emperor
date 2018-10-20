@@ -14,13 +14,13 @@ class MenuViewController: UIViewController {
     let menu: [String] = [
         "Doodle",
         "Picture",
+        "Action",
         "PlaneDetection",
         "Face",
         "Memo",
         "Mirror",
         "BusinessCard",
         "Remote",
-        "3DModel",
     ]
     
     override func viewDidLoad() {
