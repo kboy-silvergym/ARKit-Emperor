@@ -37,6 +37,14 @@ Place your photo into the picture frame. You can make picture frames on SceneKit
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
+## SCNAction
+
+<img src="images/action.gif" width=200>
+
+Use SCNAction to  your object appeares more naturally.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Action)
+
 ## Rich Plane Detection (ARKit 1.5~)
 
 |horizontal|vertical|

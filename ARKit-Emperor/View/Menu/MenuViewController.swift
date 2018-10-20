@@ -14,6 +14,7 @@ class MenuViewController: UIViewController {
     let menu: [String] = [
         "Doodle",
         "Picture",
+        "Action",
         "PlaneDetection",
         "Face",
         "Memo",
