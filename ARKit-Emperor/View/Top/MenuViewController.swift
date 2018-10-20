@@ -20,6 +20,7 @@ class MenuViewController: UIViewController {
         "Mirror",
         "BusinessCard",
         "Remote",
+        "3DModel",
     ]
     
     override func viewDidLoad() {
