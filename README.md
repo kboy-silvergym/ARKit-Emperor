@@ -29,14 +29,6 @@ This sample code's perfomance is not perfect because it adds a new node every ti
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Doodle)
 
-## Placing pictures (ARKit 1.0~)
-
-<img src="images/picture.gif" width=200>
-
-Place your photo into the picture frame. You can make picture frames on SceneKit.
-
-The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
-
 ## Custom 3D Model from Bezier Path
 
 <img src="images/star.gif" width=200>
@@ -44,6 +36,14 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 You can create 3D model by code using bezier path
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/CustomModel)
+
+## Placing pictures (ARKit 1.0~)
+
+<img src="images/picture.gif" width=200>
+
+Place your photo into the picture frame. You can make picture frames on SceneKit.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
 ## SCNAction
 
