@@ -37,6 +37,14 @@ Place your photo into the picture frame. You can make picture frames on SceneKit
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Picture)
 
+## Custom 3D Model from Bezier Path
+
+<img src="images/star.gif" width=200>
+
+You can create 3D model by code using bezier path
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/CustomModel)
+
 ## SCNAction
 
 <img src="images/action.gif" width=200>
