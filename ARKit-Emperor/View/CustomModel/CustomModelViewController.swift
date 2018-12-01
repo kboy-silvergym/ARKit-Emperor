@@ -24,6 +24,8 @@ class CustomModelViewController: UIViewController {
         
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.autoenablesDefaultLighting = true
+        createStar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +34,13 @@ class CustomModelViewController: UIViewController {
         sceneView.session.run(defaultConfiguration)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
+        sceneView.session.pause()
+    }
+    
+    private func createStar(){
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0.1, y: 0.5))       //A
         path.addLine(to: CGPoint(x: 0.1, y: 0.1))    //B
@@ -47,19 +53,12 @@ class CustomModelViewController: UIViewController {
         let shape = SCNShape(path: path, extrusionDepth: 0.2)
         let color = #colorLiteral(red: 1, green: 0.9913478494, blue: 0, alpha: 1)
         shape.firstMaterial?.diffuse.contents = color
-        shape.chamferRadius = 0.01
+        shape.chamferRadius = 0.1
         
         let boltNode = SCNNode(geometry: shape)
         boltNode.position.z = -1
         sceneView.scene.rootNode.addChildNode(boltNode)
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        sceneView.session.pause()
-    }
-    
 }
 
 extension CustomModelViewController: ARSCNViewDelegate {
