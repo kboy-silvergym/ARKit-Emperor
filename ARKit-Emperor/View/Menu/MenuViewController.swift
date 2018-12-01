@@ -13,6 +13,7 @@ class MenuViewController: UIViewController {
     
     let menu: [String] = [
         "Doodle",
+        "CustomModel",
         "Picture",
         "Action",
         "PlaneDetection",

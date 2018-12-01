@@ -35,6 +35,8 @@
 		28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */; };
 		28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FAAB2144EF98006C4577 /* MenuViewController.swift */; };
 		28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FAAD2144EFA3006C4577 /* Memo.storyboard */; };
+		28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */; };
+		28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		28C4FA9C21415F55006C4577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28C4FAAB2144EF98006C4577 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		28C4FAAD2144EFA3006C4577 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
+		28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomModel.storyboard; sourceTree = "<group>"; };
+		28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			children = (
 				28C4FAAA2144EF55006C4577 /* Menu */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
+				28D9CD7121B2D87D0008C3C4 /* CustomModel */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
@@ -231,6 +236,15 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		28D9CD7121B2D87D0008C3C4 /* CustomModel */ = {
+			isa = PBXGroup;
+			children = (
+				28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */,
+				28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */,
+			);
+			path = CustomModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +315,7 @@
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
 				28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */,
 				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
+				28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
@@ -326,6 +341,7 @@
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
 				281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */,
+				28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */,
 				281641112146B57800896FFE /* DoodleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
