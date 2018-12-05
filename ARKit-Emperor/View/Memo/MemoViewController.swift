@@ -37,7 +37,7 @@ class MemoViewController: UIViewController {
         super.viewDidLoad()
         
         sceneView.delegate = self
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin]
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture(_:)))
         sceneView.addGestureRecognizer(gesture)
