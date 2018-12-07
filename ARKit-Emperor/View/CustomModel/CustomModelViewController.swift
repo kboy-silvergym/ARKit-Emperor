@@ -41,12 +41,13 @@ class CustomModelViewController: UIViewController {
     }
     
     private func createStar(){
-        let starPath = UIBezierPath
-            .polygon(.starVertexes(
-                in: CGRect(origin: .zero, size: CGSize(width: 1, height: 1)),
-                roundness: 50,
-                numberOfVertexes: 5))
-        let shape = SCNShape(path: starPath, extrusionDepth: 0.2)
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0.5, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: -0.5))
+        path.addLine(to: CGPoint(x: -0.5, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: 0.5))
+        path.close()
+        let shape = SCNShape(path: path, extrusionDepth: 0.2)
         let color = #colorLiteral(red: 1, green: 0.9913478494, blue: 0, alpha: 1)
         shape.firstMaterial?.diffuse.contents = color
         shape.chamferRadius = 0.08
