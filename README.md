@@ -21,7 +21,7 @@ The Emperor give you the most practical ARKit samples ever.
 
 ## Practice
 
-|0|1||2|3|4|5|6|7|
+|0|1|2|3|4|5|6|7|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |<img src="images/0.gif" width=200>|<img src="images/1.gif" width=200>|<img src="images/2.gif" width=200>|<img src="images/3-0.gif" width=200>|<img src="images/4.gif" width=200>|<img src="images/5.gif" width=200>|<img src="images/6.gif" width=200>|<img src="images/7.gif" width=200>|
 
