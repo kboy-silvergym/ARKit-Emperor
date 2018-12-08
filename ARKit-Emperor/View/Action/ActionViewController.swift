@@ -86,6 +86,18 @@ class ActionViewController: UIViewController {
         node.geometry = plane
         node.opacity = 0.25
         node.eulerAngles.x = -.pi/2
+        
+        let sphere = SCNSphere(radius: 0.1)
+        sphere.firstMaterial?.diffuse.contents = UIColor.red
+        
+        let m1 = SCNMaterial()
+        m1.diffuse.contents = UIColor.red
+        
+        let m2 = SCNMaterial()
+        m2.diffuse.contents = UIColor.blue
+        
+        sphere.materials = [m1, m2]
+        
         return node
     }
     

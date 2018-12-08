@@ -19,7 +19,13 @@ The Emperor give you the most practical ARKit samples ever.
 
 # Samples
 
-## Doodle (ARKit 1.0~)
+## Practice
+
+|0|1||2|3|4|5|6|7|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|<img src="images/0.gif" width=200>|<img src="images/1.gif" width=200>|<img src="images/2.gif" width=200>|<img src="images/3-0.gif" width=200>|<img src="images/4.gif" width=200>|<img src="images/5.gif" width=200>|<img src="images/6.gif" width=200>|<img src="images/7.gif" width=200>|
+
+## Doodle
 
 <img src="images/drawing.gif" width=200>
 
@@ -37,7 +43,7 @@ You can create 3D model by code using bezier path
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/CustomModel)
 
-## Placing pictures (ARKit 1.0~)
+## Placing pictures
 
 <img src="images/picture.gif" width=200>
 
@@ -63,7 +69,7 @@ The plane detection can be available by ARKit 1.0, but this richer detection is 
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/PlaneDetection)
 
-## Face (ARKit 1.0~)
+## Face
 
 <img src="images/tongue.gif" width=200>
 

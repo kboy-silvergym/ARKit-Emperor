@@ -12,6 +12,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let menu: [String] = [
+        "Practice",
         "Doodle",
         "CustomModel",
         "Picture",
