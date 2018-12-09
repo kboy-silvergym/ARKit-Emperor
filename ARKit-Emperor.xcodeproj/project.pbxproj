@@ -17,6 +17,8 @@
 		2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816410A2146B4BA00896FFE /* Doodle.storyboard */; };
 		281641112146B57800896FFE /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641102146B57800896FFE /* DoodleViewController.swift */; };
 		281641132146B58200896FFE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641122146B58200896FFE /* PictureViewController.swift */; };
+		282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282711CA21BDDDBC0098CBEA /* Doodle2ViewController.swift */; };
+		282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282711CC21BDDDC50098CBEA /* Doodle2.storyboard */; };
 		285F9477217B5B8500E9A6AE /* Action.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F9476217B5B8500E9A6AE /* Action.storyboard */; };
 		285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F9478217B5B9700E9A6AE /* ActionViewController.swift */; };
 		287176D32144F800000E4470 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287176D22144F800000E4470 /* TextNode.swift */; };
@@ -53,6 +55,8 @@
 		2816410A2146B4BA00896FFE /* Doodle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doodle.storyboard; sourceTree = "<group>"; };
 		281641102146B57800896FFE /* DoodleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
 		281641122146B58200896FFE /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		282711CA21BDDDBC0098CBEA /* Doodle2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doodle2ViewController.swift; sourceTree = "<group>"; };
+		282711CC21BDDDC50098CBEA /* Doodle2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doodle2.storyboard; sourceTree = "<group>"; };
 		285F9476217B5B8500E9A6AE /* Action.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Action.storyboard; sourceTree = "<group>"; };
 		285F9478217B5B9700E9A6AE /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		287176D22144F800000E4470 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 			path = Face;
 			sourceTree = "<group>";
 		};
+		282711C921BDDDA80098CBEA /* Doodle2 */ = {
+			isa = PBXGroup;
+			children = (
+				282711CC21BDDDC50098CBEA /* Doodle2.storyboard */,
+				282711CA21BDDDBC0098CBEA /* Doodle2ViewController.swift */,
+			);
+			path = Doodle2;
+			sourceTree = "<group>";
+		};
 		285F9475217B5B3900E9A6AE /* Action */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 				28C4FAAA2144EF55006C4577 /* Menu */,
 				28EB173421B9F41D00AB6A6F /* Practice */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
+				282711C921BDDDA80098CBEA /* Doodle2 */,
 				28D9CD7121B2D87D0008C3C4 /* CustomModel */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
@@ -326,6 +340,7 @@
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
+				282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */,
 				28EB173821B9F44F00AB6A6F /* Practice.storyboard in Resources */,
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
 				28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */,
@@ -351,6 +366,7 @@
 				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
+				282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */,
 				285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */,
 				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
