@@ -25,6 +25,7 @@ class DoodleViewController: UIViewController {
     private var polygonVertices: [SCNVector3] = []
     private var indices: [Int32] = []
     
+    private var pointTouching: CGPoint = .zero
     private var isDrawing: Bool = false
     
     override func viewDidLoad() {
@@ -49,8 +50,20 @@ class DoodleViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let location = touches.first?.location(in: nil) else {
+            return
+        }
+        pointTouching = location
+        
         begin()
         isDrawing = true
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let location = touches.first?.location(in: nil) else {
+            return
+        }
+        pointTouching = location
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -111,11 +124,15 @@ extension DoodleViewController {
             return
         }
         
+        // world coordinates
+        let pointWorld = sceneView.unprojectPoint(SCNVector3Make(Float(pointTouching.x), Float(pointTouching.y), 0.997))
+        let pointCamera = camera.convertPosition(pointWorld, from: nil)
+        
         // camera coordinates
-        let x: Float = 0
-        let y: Float = 0
+        let x: Float = pointCamera.x
+        let y: Float = pointCamera.y
+        let z: Float = -0.2
         let lengthOfTriangle: Float = 0.01
-        let cameraZ: Float = -0.2
         
         // triangle vertices
         
@@ -123,17 +140,17 @@ extension DoodleViewController {
         let vertice0InCamera = SCNVector3Make(
             x,
             y - (sqrt(3) * lengthOfTriangle / 3),
-            cameraZ
+            z
         )
         let vertice1InCamera = SCNVector3Make(
             x - lengthOfTriangle / 2,
             y + (sqrt(3) * lengthOfTriangle / 6),
-            cameraZ
+            z
         )
         let vertice2InCamera = SCNVector3Make(
             x + lengthOfTriangle / 2,
             y +  (sqrt(3) * lengthOfTriangle / 6),
-            cameraZ
+            z
         )
         
         // world coordinates
