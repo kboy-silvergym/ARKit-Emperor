@@ -6,13 +6,6 @@
 //  Copyright © 2018年 KBOY. All rights reserved.
 //
 
-//
-//  DoodleViewController.swift
-//  ARKit-Emperor
-//
-//  Created by Kei Fujikawa on 2018/09/10.
-//  Copyright © 2018年 KBOY. All rights reserved.
-//
 import UIKit
 import ARKit
 
