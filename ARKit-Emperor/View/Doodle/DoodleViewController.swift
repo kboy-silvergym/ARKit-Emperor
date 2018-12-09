@@ -120,9 +120,21 @@ extension DoodleViewController {
         // triangle vertices
         
         // camera coordinates
-        let vertice0InCamera = SCNVector3Make(x, (1 - lengthOfTriangle / sqrt(3)) * y, cameraZ)
-        let vertice1InCamera = SCNVector3Make(x - lengthOfTriangle / 2, y + (sqrt(3) * lengthOfTriangle / 2), cameraZ)
-        let vertice2InCamera = SCNVector3Make(x + lengthOfTriangle / 2, y +  (sqrt(3) * lengthOfTriangle / 2), cameraZ)
+        let vertice0InCamera = SCNVector3Make(
+            x,
+            y - (sqrt(3) * lengthOfTriangle / 3),
+            cameraZ
+        )
+        let vertice1InCamera = SCNVector3Make(
+            x - lengthOfTriangle / 2,
+            y + (sqrt(3) * lengthOfTriangle / 6),
+            cameraZ
+        )
+        let vertice2InCamera = SCNVector3Make(
+            x + lengthOfTriangle / 2,
+            y +  (sqrt(3) * lengthOfTriangle / 6),
+            cameraZ
+        )
         
         // world coordinates
         let vertice0 = camera.convertPosition(vertice0InCamera, to: nil)
