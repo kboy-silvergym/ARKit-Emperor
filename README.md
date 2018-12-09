@@ -29,11 +29,17 @@ The Emperor give you the most practical ARKit samples ever.
 
 <img src="images/drawing.gif" width=200>
 
-You can draw to the real space!
-
-This sample code's perfomance is not perfect because it adds a new node every time your finger moves. The best way I know is adding node only when you start touching screen and update it's geometry during moving your finger. Please refer the [Just a line](https://justaline.withgoogle.com/) code.
+You can draw to the real space! This sample code is very simple but perfomance is not perfect because it adds a new node every time your finger moves. 
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Doodle)
+
+## Doodle2
+
+<img src="images/drawing2.gif" width=200>
+
+This sample is better than `Doodle1`  because the geometry is created once each line. If you customize the vertices and indices logic, you can create any line you want. But the logic is so complicated.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Doodle2)
 
 ## Custom 3D Model from Bezier Path
 
