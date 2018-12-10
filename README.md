@@ -81,6 +81,10 @@ The plane detection can be available by ARKit 1.0, but this richer detection is 
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/PlaneDetection)
 
+And you can implement simple occlusion like below.
+
+<img src="images/occlusion.gif" width=200>
+
 ## Face
 
 <img src="images/tongue.gif" width=200>

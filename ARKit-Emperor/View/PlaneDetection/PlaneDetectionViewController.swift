@@ -14,6 +14,13 @@ class PlaneDetectionViewController: UIViewController {
     
     private let device = MTLCreateSystemDefaultDevice()!
     private var fadingNode: SCNNode?
+    
+    lazy var boxNode: SCNNode = {
+        let box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01)
+        box.firstMaterial?.diffuse.contents = UIColor.red
+        let node = SCNNode(geometry: box)
+        return node
+    }()
 
     let defaultConfiguration: ARWorldTrackingConfiguration = {
         let configuration = ARWorldTrackingConfiguration()
@@ -26,6 +33,7 @@ class PlaneDetectionViewController: UIViewController {
         
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.autoenablesDefaultLighting = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +48,15 @@ class PlaneDetectionViewController: UIViewController {
         sceneView.session.pause()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let camera = sceneView.pointOfView else {
+            return
+        }
+        let cameraPos = SCNVector3Make(0, 0, -0.5)
+        let position = camera.convertPosition(cameraPos, to: nil)
+        boxNode.position = position
+        sceneView.scene.rootNode.addChildNode(boxNode)
+    }
 }
 
 extension PlaneDetectionViewController: ARSCNViewDelegate {
@@ -61,7 +78,7 @@ extension PlaneDetectionViewController: ARSCNViewDelegate {
             planeNode.castsShadow = false
             planeNode.position.y = planeNode.position.y + 0.001 // ちょっと浮かす
             planeNode.opacity = 0.0
-            planeNode.renderingOrder = 9
+            planeNode.renderingOrder = -2
             node.addChildNode(planeNode)
         }
         let extent = planeAnchor.extent
@@ -69,7 +86,7 @@ extension PlaneDetectionViewController: ARSCNViewDelegate {
         
         let planeNode = SCNNode(geometry: plane)
         planeNode.eulerAngles.x = -.pi/2
-        planeNode.renderingOrder = 10
+        planeNode.renderingOrder = -1
         
         switch planeAnchor.alignment {
         case .horizontal:
