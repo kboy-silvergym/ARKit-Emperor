@@ -63,7 +63,7 @@ class ActionViewController: UIViewController {
         feedback.notificationOccurred(.success)
         
         let scaleAction = SCNAction.scale(by: 100, duration: 0.4)
-        let rotateAction = SCNAction.rotateBy(x: 0, y: 1, z: 0, duration: .pi/2)
+        let rotateAction = SCNAction.rotateBy(x: 0, y: .pi/2, z: 0, duration: 1)
         rotateAction.duration = 0.4
         let action = SCNAction.group([scaleAction, rotateAction])
         flamingoNode.runAction(action)
