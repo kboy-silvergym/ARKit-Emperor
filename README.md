@@ -33,7 +33,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Doodle
 
-<img src="images/drawing.gif" width=200>
+<img src="images/drawing.gif" width=140>
 
 You can draw to the real space! This sample code is very simple but perfomance is not perfect because it adds a new node every time your finger moves. 
 
@@ -41,7 +41,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Doodle2
 
-<img src="images/drawing2.gif" width=200>
+<img src="images/drawing2.gif" width=140>
 
 This sample is better than `Doodle1`  because the geometry is created once each line. If you customize the vertices and indices logic, you can create any line you want. But the logic is so complicated.
 
@@ -49,7 +49,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Custom 3D Model from Bezier Path
 
-<img src="images/star.gif" width=200>
+<img src="images/star.gif" width=140>
 
 You can create 3D model by code using bezier path
 
@@ -57,7 +57,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Placing pictures
 
-<img src="images/picture.gif" width=200>
+<img src="images/picture.gif" width=140>
 
 Place your photo into the picture frame. You can make picture frames on SceneKit.
 
@@ -65,7 +65,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## SCNAction
 
-<img src="images/action.gif" width=200>
+<img src="images/action.gif" width=140>
 
 Use SCNAction to  your object appeares more naturally.
 
@@ -73,7 +73,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Color Grading
 
-<img src="images/colorGrading.gif" width=200>
+<img src="images/colorGrading.gif" width=140>
 
 You can make camera fileter using a LUT image.
 
@@ -83,7 +83,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 |horizontal|vertical|
 |:--:|:--:|
-|<img src="images/plane.gif" width=200>|<img src="images/plane2.gif" width=200>|
+|<img src="images/plane.gif" width=140>|<img src="images/plane2.gif" width=140>|
 
 The plane detection can be available by ARKit 1.0, but this richer detection is available by 1.5.
 
@@ -91,11 +91,11 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 And you can implement simple occlusion like below.
 
-<img src="images/occlusion.gif" width=200>
+<img src="images/occlusion.gif" width=140>
 
 ## Face
 
-<img src="images/tongue.gif" width=200>
+<img src="images/tongue.gif" width=140>
 
 By ARKit2.0, you can detect also gaze and tongue. This demo is using tongue detection.
 
@@ -103,7 +103,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Persistent Memo (ARKit 2.0~)
 
-<img src="images/memo.gif" width=200>
+<img src="images/memo.gif" width=140>
 
 Using ARKit 2.0, you can save ARWorldMap and load it.
 
@@ -111,7 +111,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Mirror (ARKit 2.0~)
 
-<img src="images/mirror.gif" width=200>
+<img src="images/mirror.gif" width=140>
 
 Using ARKit 2.0, It's not perfect but the object reflect around the environment.
 
@@ -121,7 +121,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 |Show|Tap|
 |:-:|:-:|
-|<img src="images/business_card1.gif" width=200>|<img src="images/business_card2.gif" width=200>|
+|<img src="images/business_card1.gif" width=140>|<img src="images/business_card2.gif" width=140>|
 
 Augmented business card. If you register the image of your card, ARKit2.0 detects it and the 3D component made in SceneKit can be shown.
 
@@ -131,11 +131,11 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Detecting your Remote (ARKit 2.0~)
 
-<img src="images/remote.gif" width=200>
+<img src="images/remote.gif" width=140>
 
 Using ARKit 2.0,  now you can scan 3D object.
 
-The code is **WIP**. Wait a few days to be completed..
+The code is **WIP**. Wait a days to be completed..
 
 Note that the Apple doesn't recommend you to use ARObjectScanningConfiguration for production use.
 
@@ -143,7 +143,7 @@ Note that the Apple doesn't recommend you to use ARObjectScanningConfiguration f
 
 # Author
 
-<img src ="images/kboy1.jpg" width=150>
+<img src ="images/kboy1.jpg" width=140>
 
 **KBOY (Kei Fujikawa)**
 
