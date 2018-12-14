@@ -23,11 +23,11 @@ The Emperor give you the most practical ARKit samples ever.
 
 |Place infront of camera|Place same Y with Camera|Place in front of tapped|Place to plane|
 |:--:|:--:|:--:|:--:|
-|<img src="images/0.gif" width=200>|<img src="images/1.gif" width=200>|<img src="images/2.gif" width=200>|<img src="images/3-0.gif" width=200>|
+|<img src="images/0.gif" width=140>|<img src="images/1.gif" width=140>|<img src="images/2.gif" width=140>|<img src="images/3-0.gif" width=140>|
 
 |Look at me|Look as same with me|Shoot|Hold|
 |:--:|:--:|:--:|:--:|
-|<img src="images/4.gif" width=200>|<img src="images/5.gif" width=200>|<img src="images/6.gif" width=200>|<img src="images/7.gif" width=200>|
+|<img src="images/4.gif" width=140>|<img src="images/5.gif" width=140>|<img src="images/6.gif" width=140>|<img src="images/7.gif" width=140>|
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Practice)
 
