@@ -73,9 +73,9 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 ## Color Grading
 
-|<img src="images/lut0.jpg">|<img src="images/lut1.jpg">|<img src="images/lut2.jpg">|<img src="images/lut3.jpg">|
+|<img src="images/lut0.jpg">|<img src="images/lut1.png">|<img src="images/lut2.png">|<img src="images/lut3.png">|
 |:-:|:-:|:-:|:-:|
-|<img src="images/colorGrading.gif" width=140>|<img src="images/lut1demo.gif" width=140>|<img src="images/lut2demo.gif.gif" width=140>|<img src="images/lut3demo.gif.gif" width=140>|
+|<img src="images/colorGrading.gif" width=140>|<img src="images/lut1demo.gif" width=140>|<img src="images/lut2demo.gif" width=140>|<img src="images/lut3demo.gif" width=140>|
 
 You can make camera fileter using a LUT image.
 
