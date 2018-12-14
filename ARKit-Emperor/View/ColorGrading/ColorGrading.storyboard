@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1TK-AP-fxL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Grading View Controller-->
+        <scene sceneID="H8g-ff-NSy">
+            <objects>
+                <viewController id="1TK-AP-fxL" customClass="ColorGradingViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XfS-I7-HZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-iW-lww">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TaG-iW-lww" secondAttribute="bottom" id="33G-rO-3WJ"/>
+                            <constraint firstItem="TaG-iW-lww" firstAttribute="trailing" secondItem="wAk-Mf-7Me" secondAttribute="trailing" id="cyM-If-mCb"/>
+                            <constraint firstItem="TaG-iW-lww" firstAttribute="leading" secondItem="wAk-Mf-7Me" secondAttribute="leading" id="i7x-F6-4FG"/>
+                            <constraint firstItem="TaG-iW-lww" firstAttribute="top" secondItem="XfS-I7-HZO" secondAttribute="top" id="ohq-kf-OAe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wAk-Mf-7Me"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="TaG-iW-lww" id="3n9-BH-gM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFw-TK-Wfh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+        </scene>
+    </scenes>
+</document>

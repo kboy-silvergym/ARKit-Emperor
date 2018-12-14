@@ -18,6 +18,7 @@ class MenuViewController: UIViewController {
         "CustomModel",
         "Picture",
         "Action",
+        "ColorGrading",
         "PlaneDetection",
         "Face",
         "Memo",

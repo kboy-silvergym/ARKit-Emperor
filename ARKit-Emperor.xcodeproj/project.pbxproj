@@ -25,6 +25,8 @@
 		288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF121452DA500855D36 /* Starjhol.ttf */; };
 		288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */; };
 		288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF321452DA500855D36 /* Starjedi.ttf */; };
+		28982A8421C3F35B0081E925 /* ColorGrading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28982A8321C3F35B0081E925 /* ColorGrading.storyboard */; };
+		28982A8621C3F3700081E925 /* ColorGradingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982A8521C3F3700081E925 /* ColorGradingViewController.swift */; };
 		289C33EE2146A19C00643301 /* Remote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289C33ED2146A19C00643301 /* Remote.storyboard */; };
 		289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289C33EF2146A1A800643301 /* RemoteViewController.swift */; };
 		28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */; };
@@ -63,6 +65,8 @@
 		288D3BF121452DA500855D36 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Star_Jedi_Rounded.ttf; sourceTree = "<group>"; };
 		288D3BF321452DA500855D36 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		28982A8321C3F35B0081E925 /* ColorGrading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorGrading.storyboard; sourceTree = "<group>"; };
+		28982A8521C3F3700081E925 /* ColorGradingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradingViewController.swift; sourceTree = "<group>"; };
 		289C33ED2146A19C00643301 /* Remote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Remote.storyboard; sourceTree = "<group>"; };
 		289C33EF2146A1A800643301 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
 		28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				28D9CD7121B2D87D0008C3C4 /* CustomModel */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
+				28982A8221C3F3120081E925 /* ColorGrading */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
@@ -149,6 +154,15 @@
 				28C4FAA42144EE55006C4577 /* Remote */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		28982A8221C3F3120081E925 /* ColorGrading */ = {
+			isa = PBXGroup;
+			children = (
+				28982A8321C3F35B0081E925 /* ColorGrading.storyboard */,
+				28982A8521C3F3700081E925 /* ColorGradingViewController.swift */,
+			);
+			path = ColorGrading;
 			sourceTree = "<group>";
 		};
 		28ABE77A2151DA7900EF50E1 /* PlaneDetection */ = {
@@ -348,6 +362,7 @@
 				28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
+				28982A8421C3F35B0081E925 /* ColorGrading.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
 			);
@@ -370,6 +385,7 @@
 				285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */,
 				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
+				28982A8621C3F3700081E925 /* ColorGradingViewController.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
 				281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */,
