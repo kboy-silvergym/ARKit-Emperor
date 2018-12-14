@@ -54,7 +54,7 @@ class ColorGradingViewController: UIViewController {
         isFilterd = !isFilterd
         
         if isFilterd {
-            let images: [UIImage] = [#imageLiteral(resourceName: "sepia"), #imageLiteral(resourceName: "lut1"), #imageLiteral(resourceName: "lut2")]
+            let images: [UIImage] = [#imageLiteral(resourceName: "sepia"), #imageLiteral(resourceName: "lut1"), #imageLiteral(resourceName: "lut2"), #imageLiteral(resourceName: "lut3")]
             let image: UIImage = images.shuffled().first!
             sceneView.pointOfView?.camera?.colorGrading.contents = image
         } else {
