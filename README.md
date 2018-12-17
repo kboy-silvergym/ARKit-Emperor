@@ -31,6 +31,14 @@ The Emperor give you the most practical ARKit samples ever.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Practice)
 
+## Gesture
+
+|Scale|Rotation|
+|:--:|:--:|
+|<img src="images/scale.gif" width=140>|<img src="images/rotation.gif" width=140>|
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Gesture)
+
 ## Doodle
 
 <img src="images/drawing.gif" width=140>
