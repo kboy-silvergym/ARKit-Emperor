@@ -35,7 +35,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 |Scale|Rotation|
 |:--:|:--:|
-|<img src="images/scale.gif" width=140>|<img src="images/rotation.gif" width=140>|
+|<img src="images/scale.gif" width=140>|<img src="images/rotate.gif" width=140>|
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Gesture)
 
