@@ -13,6 +13,7 @@ class MenuViewController: UIViewController {
     
     let menu: [String] = [
         "Practice",
+        "Gesture",
         "Doodle",
         "Doodle2",
         "CustomModel",
