@@ -20,6 +20,7 @@ class MenuViewController: UIViewController {
         "Picture",
         "Action",
         "Bubble",
+        "Physics",
         "ColorGrading",
         "PlaneDetection",
         "Face",

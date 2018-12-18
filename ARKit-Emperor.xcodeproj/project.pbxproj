@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280E302A21C93D1600D5BEBA /* Physics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280E302921C93D1600D5BEBA /* Physics.storyboard */; };
+		280E302C21C93D2F00D5BEBA /* PhyisicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E302B21C93D2F00D5BEBA /* PhyisicsViewController.swift */; };
 		281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281640FB2146B1F000896FFE /* Mirror.storyboard */; };
 		281640FE2146B1FB00896FFE /* MirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281640FD2146B1FB00896FFE /* MirrorViewController.swift */; };
 		281641002146B24000896FFE /* BusinessCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281640FF2146B24000896FFE /* BusinessCard.storyboard */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		280A32B421507566002D8F8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		280E302921C93D1600D5BEBA /* Physics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Physics.storyboard; sourceTree = "<group>"; };
+		280E302B21C93D2F00D5BEBA /* PhyisicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyisicsViewController.swift; sourceTree = "<group>"; };
 		281640FB2146B1F000896FFE /* Mirror.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mirror.storyboard; sourceTree = "<group>"; };
 		281640FD2146B1FB00896FFE /* MirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
 		281640FF2146B24000896FFE /* BusinessCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessCard.storyboard; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280E302821C93D0700D5BEBA /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				280E302921C93D1600D5BEBA /* Physics.storyboard */,
+				280E302B21C93D2F00D5BEBA /* PhyisicsViewController.swift */,
+			);
+			path = Physics;
+			sourceTree = "<group>";
+		};
 		281641032146B2E600896FFE /* Face */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,7 @@
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
 				28DD883221C86E8900588ED8 /* Bubble */,
+				280E302821C93D0700D5BEBA /* Physics */,
 				28982A8221C3F3120081E925 /* ColorGrading */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
@@ -394,6 +408,7 @@
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
 				28982A8421C3F35B0081E925 /* ColorGrading.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
+				280E302A21C93D1600D5BEBA /* Physics.storyboard in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287176D32144F800000E4470 /* TextNode.swift in Sources */,
+				280E302C21C93D2F00D5BEBA /* PhyisicsViewController.swift in Sources */,
 				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,
