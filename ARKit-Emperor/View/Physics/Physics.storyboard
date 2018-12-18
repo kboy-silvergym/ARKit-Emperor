@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Wg-qe-fcX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phyisics View Controller-->
+        <scene sceneID="ayG-yF-l18">
+            <objects>
+                <viewController id="2Wg-qe-fcX" customClass="PhyisicsViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QHv-gc-nkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-8p-HwV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's shoot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE4-sN-YMa">
+                                <rect key="frame" x="83" y="60" width="209" height="49"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sE4-sN-YMa" firstAttribute="centerX" secondItem="QHv-gc-nkc" secondAttribute="centerX" id="1oX-BN-wg3"/>
+                            <constraint firstItem="uFu-8p-HwV" firstAttribute="top" secondItem="QHv-gc-nkc" secondAttribute="top" id="5sM-Gc-cdV"/>
+                            <constraint firstItem="uFu-8p-HwV" firstAttribute="leading" secondItem="fsq-UO-FB1" secondAttribute="leading" id="8cN-Lc-Zdz"/>
+                            <constraint firstItem="sE4-sN-YMa" firstAttribute="top" secondItem="fsq-UO-FB1" secondAttribute="top" constant="40" id="C6x-4B-t4t"/>
+                            <constraint firstItem="uFu-8p-HwV" firstAttribute="trailing" secondItem="fsq-UO-FB1" secondAttribute="trailing" id="bHm-3Q-C64"/>
+                            <constraint firstAttribute="bottom" secondItem="uFu-8p-HwV" secondAttribute="bottom" id="vny-jY-h30"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fsq-UO-FB1"/>
+                    </view>
+                    <connections>
+                        <outlet property="hitLabel" destination="sE4-sN-YMa" id="Nff-CU-HUu"/>
+                        <outlet property="sceneView" destination="uFu-8p-HwV" id="FoD-W1-8Zx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGf-rE-YPY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.0194902548726"/>
+        </scene>
+    </scenes>
+</document>

@@ -41,9 +41,6 @@ class BubbleViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let bubble = SCNSphere(radius: 0.1)
         bubble.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "icon")
-        bubble.firstMaterial?.diffuse.contentsTransform = SCNMatrix4MakeScale(1, 1, 0)
-        bubble.firstMaterial?.diffuse.wrapS = .repeat
-        bubble.firstMaterial?.diffuse.wrapT = .repeat
         bubble.firstMaterial?.transparency = 0.5
         bubble.firstMaterial?.writesToDepthBuffer = false
         bubble.firstMaterial?.blendMode = .screen
