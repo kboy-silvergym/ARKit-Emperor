@@ -43,6 +43,8 @@
 		28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FAAD2144EFA3006C4577 /* Memo.storyboard */; };
 		28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */; };
 		28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */; };
+		28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD883321C86E9F00588ED8 /* Bubble.storyboard */; };
+		28DD883621C86EC400588ED8 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD883521C86EC400588ED8 /* BubbleViewController.swift */; };
 		28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB173521B9F43E00AB6A6F /* PracticeViewController.swift */; };
 		28EB173821B9F44F00AB6A6F /* Practice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EB173721B9F44F00AB6A6F /* Practice.storyboard */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		28C4FAAD2144EFA3006C4577 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 		28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomModel.storyboard; sourceTree = "<group>"; };
 		28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
+		28DD883321C86E9F00588ED8 /* Bubble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubble.storyboard; sourceTree = "<group>"; };
+		28DD883521C86EC400588ED8 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
 		28EB173521B9F43E00AB6A6F /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		28EB173721B9F44F00AB6A6F /* Practice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 				28D9CD7121B2D87D0008C3C4 /* CustomModel */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
+				28DD883221C86E8900588ED8 /* Bubble */,
 				28982A8221C3F3120081E925 /* ColorGrading */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
@@ -292,6 +297,15 @@
 			path = CustomModel;
 			sourceTree = "<group>";
 		};
+		28DD883221C86E8900588ED8 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				28DD883321C86E9F00588ED8 /* Bubble.storyboard */,
+				28DD883521C86EC400588ED8 /* BubbleViewController.swift */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
 		28EB173421B9F41D00AB6A6F /* Practice */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +381,7 @@
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
+				28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */,
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */,
 				28EB173821B9F44F00AB6A6F /* Practice.storyboard in Resources */,
@@ -394,6 +409,7 @@
 				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,
+				28DD883621C86EC400588ED8 /* BubbleViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
 				282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */,

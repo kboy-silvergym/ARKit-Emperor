@@ -79,6 +79,12 @@ Use SCNAction to  your object appeares more naturally.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Action)
 
+## Bubble mixed with your image
+
+<img src="images/bubble.gif" width=140>
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Bubble)
+
 ## Color Grading
 
 |<img src="images/lut0.jpg">|<img src="images/lut1.png">|<img src="images/lut2.png">|<img src="images/lut3.png">|
