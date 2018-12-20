@@ -11,8 +11,27 @@ import UIKit
 import UIKit
 import ARKit
 
+enum Particles: String {
+    case bokeh
+    case confetti
+    case fire
+    case rain
+    case reactor
+    case smoke
+    case stars
+    
+    static var order: [Particles] = [.bokeh,
+                                     .confetti,
+                                     .fire,
+                                     .rain,
+                                     .reactor,
+                                     .smoke,
+                                     .stars]
+}
+
 class ParticleViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     let defaultConfiguration: ARWorldTrackingConfiguration = {
         let configuration = ARWorldTrackingConfiguration()
@@ -20,6 +39,8 @@ class ParticleViewController: UIViewController {
         configuration.environmentTexturing = .automatic
         return configuration
     }()
+    
+    private var selectedParticle: Particles = .bokeh
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +61,28 @@ class ParticleViewController: UIViewController {
         sceneView.session.pause()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        addParticle(selectedParticle)
+    }
+    
+    private func addParticle(_ particle: Particles){
+        let particle = SCNParticleSystem(named: particle.rawValue + ".scnp", inDirectory: "art.scnassets")
+        
+        let particleNode = SCNNode()
+        particleNode.addParticleSystem(particle!)
+        particleNode.scale = SCNVector3Make(0.5, 0.5, 0.5)
+        
+        if let camera = sceneView.pointOfView {
+            let pos = SCNVector3Make(0, -0.5, -3)
+            let position = camera.convertPosition(pos, to: nil)
+            particleNode.position = position
+        }
+        sceneView.scene.rootNode.addChildNode(particleNode)
+    }
+    
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+       selectedParticle = Particles.order[sender.selectedSegmentIndex]
+    }
 }
 
 extension ParticleViewController: ARSCNViewDelegate {
