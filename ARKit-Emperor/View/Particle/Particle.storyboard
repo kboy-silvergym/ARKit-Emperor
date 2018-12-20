@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hRL-87-LRP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Particle View Controller-->
+        <scene sceneID="EN7-D1-QhJ">
+            <objects>
+                <viewController id="hRL-87-LRP" customClass="ParticleViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sSA-gc-Ur4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7j-Yt-n3Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n7j-Yt-n3Z" firstAttribute="trailing" secondItem="Tut-2d-BtP" secondAttribute="trailing" id="SAu-2Z-BFI"/>
+                            <constraint firstItem="n7j-Yt-n3Z" firstAttribute="leading" secondItem="Tut-2d-BtP" secondAttribute="leading" id="UpU-fI-jin"/>
+                            <constraint firstItem="n7j-Yt-n3Z" firstAttribute="top" secondItem="sSA-gc-Ur4" secondAttribute="top" id="jVT-0R-O3M"/>
+                            <constraint firstAttribute="bottom" secondItem="n7j-Yt-n3Z" secondAttribute="bottom" id="z2i-cT-XL2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tut-2d-BtP"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="n7j-Yt-n3Z" id="4k9-bn-m6u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkD-IP-r5u" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.8226600985222"/>
+        </scene>
+    </scenes>
+</document>
