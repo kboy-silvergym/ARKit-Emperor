@@ -20,13 +20,15 @@ enum Particles: String {
     case smoke
     case stars
     
-    static var order: [Particles] = [.bokeh,
-                                     .confetti,
-                                     .fire,
-                                     .rain,
-                                     .reactor,
-                                     .smoke,
-                                     .stars]
+    static var order: [Particles] = [
+        .bokeh,
+        .confetti,
+        .fire,
+        .rain,
+        .reactor,
+        .smoke,
+        .stars
+    ]
 }
 
 class ParticleViewController: UIViewController {
@@ -41,6 +43,7 @@ class ParticleViewController: UIViewController {
     }()
     
     private var selectedParticle: Particles = .bokeh
+    private var currentParticleNode: SCNNode?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,8 +69,9 @@ class ParticleViewController: UIViewController {
     }
     
     private func addParticle(_ particle: Particles){
-        let particle = SCNParticleSystem(named: particle.rawValue + ".scnp", inDirectory: "art.scnassets")
+        currentParticleNode?.removeFromParentNode()
         
+        let particle = SCNParticleSystem(named: particle.rawValue + ".scnp", inDirectory: "art.scnassets")
         let particleNode = SCNNode()
         particleNode.addParticleSystem(particle!)
         particleNode.scale = SCNVector3Make(0.5, 0.5, 0.5)
@@ -78,6 +82,8 @@ class ParticleViewController: UIViewController {
             particleNode.position = position
         }
         sceneView.scene.rootNode.addChildNode(particleNode)
+        
+        currentParticleNode = particleNode
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
