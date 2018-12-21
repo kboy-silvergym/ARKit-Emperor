@@ -106,7 +106,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 |bokeh|confetti|fire|rain|reactor|smoke|star|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|<img src="images/bokeh.gif" width=140>|<img src="images/confetti.gif" width=140>|<img src="images/fire.gif" width=140>|<img src="images/rain.gif" width=140>|<img src="images/reactor.gif" width=140>|<img src="images/smoke.gif" width=140>|<img src="images/star_perticle.gif" width=140>|
+|<img src="images/bokeh.gif" width=140>|<img src="images/confetti.gif" width=140>|<img src="images/fire.gif" width=140>|<img src="images/rain.gif" width=140>|<img src="images/reactor.gif" width=140>|<img src="images/smoke.gif" width=140>|<img src="images/star_particle.gif" width=140>|
 
 Show default particle system.
 
