@@ -21,6 +21,8 @@
 		281641132146B58200896FFE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281641122146B58200896FFE /* PictureViewController.swift */; };
 		282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282711CA21BDDDBC0098CBEA /* Doodle2ViewController.swift */; };
 		282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282711CC21BDDDC50098CBEA /* Doodle2.storyboard */; };
+		284FCBAC21CB1C8000EB476D /* Particle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284FCBAB21CB1C8000EB476D /* Particle.storyboard */; };
+		284FCBAE21CB1C8D00EB476D /* ParticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FCBAD21CB1C8D00EB476D /* ParticleViewController.swift */; };
 		285F9477217B5B8500E9A6AE /* Action.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F9476217B5B8500E9A6AE /* Action.storyboard */; };
 		285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F9478217B5B9700E9A6AE /* ActionViewController.swift */; };
 		2867390721C7DF9900237704 /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2867390621C7DF9900237704 /* Gesture.storyboard */; };
@@ -67,6 +69,8 @@
 		281641122146B58200896FFE /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		282711CA21BDDDBC0098CBEA /* Doodle2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doodle2ViewController.swift; sourceTree = "<group>"; };
 		282711CC21BDDDC50098CBEA /* Doodle2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doodle2.storyboard; sourceTree = "<group>"; };
+		284FCBAB21CB1C8000EB476D /* Particle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Particle.storyboard; sourceTree = "<group>"; };
+		284FCBAD21CB1C8D00EB476D /* ParticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleViewController.swift; sourceTree = "<group>"; };
 		285F9476217B5B8500E9A6AE /* Action.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Action.storyboard; sourceTree = "<group>"; };
 		285F9478217B5B9700E9A6AE /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		2867390621C7DF9900237704 /* Gesture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gesture.storyboard; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = Doodle2;
 			sourceTree = "<group>";
 		};
+		284FCBAA21CB1C5D00EB476D /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				284FCBAB21CB1C8000EB476D /* Particle.storyboard */,
+				284FCBAD21CB1C8D00EB476D /* ParticleViewController.swift */,
+			);
+			path = Particle;
+			sourceTree = "<group>";
+		};
 		285F9475217B5B3900E9A6AE /* Action */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,7 @@
 				28DD883221C86E8900588ED8 /* Bubble */,
 				280E302821C93D0700D5BEBA /* Physics */,
 				28982A8221C3F3120081E925 /* ColorGrading */,
+				284FCBAA21CB1C5D00EB476D /* Particle */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
@@ -393,6 +407,7 @@
 				288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */,
 				28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */,
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
+				284FCBAC21CB1C8000EB476D /* Particle.storyboard in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
 				28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */,
@@ -426,6 +441,7 @@
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,
 				28DD883621C86EC400588ED8 /* BubbleViewController.swift in Sources */,
+				284FCBAE21CB1C8D00EB476D /* ParticleViewController.swift in Sources */,
 				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
 				282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */,

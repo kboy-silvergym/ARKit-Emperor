@@ -22,6 +22,7 @@ class MenuViewController: UIViewController {
         "Bubble",
         "Physics",
         "ColorGrading",
+        "Particle",
         "PlaneDetection",
         "Face",
         "Memo",

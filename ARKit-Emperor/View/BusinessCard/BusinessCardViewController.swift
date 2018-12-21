@@ -69,16 +69,13 @@ class BusinessCardViewController: UIViewController {
             return
         }
         let node = result.node
-        print(node.name)
         
         if node.name == "facebook" {
             let safariVC = SFSafariViewController(url: URL(string: "https://www.facebook.com/kei.fujikawa1")!)
             self.present(safariVC, animated: true, completion: nil)
-            feedback.impactOccurred()
         } else if node.name == "twitter" {
             let safariVC = SFSafariViewController(url: URL(string: "https://twitter.com/kboy_silvergym")!)
             self.present(safariVC, animated: true, completion: nil)
-            feedback.impactOccurred()
         }
     }
     
@@ -111,4 +108,3 @@ extension BusinessCardViewController: ARSCNViewDelegate {
         }
     }
 }
-
