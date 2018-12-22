@@ -112,13 +112,23 @@ Show default particle system.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Particle)
 
-## Rich Plane Detection (ARKit 1.5~)
+## Shader
+
+Inspired by https://github.com/laanlabs/SCNTechniqueGlow
+
+Apple's official docs is https://developer.apple.com/documentation/scenekit/scntechnique
+
+<img src="images/shader.gif" width=140>
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Shader)
+
+## Plane Detection (ARKit 1.5~)
 
 |horizontal|vertical|
 |:--:|:--:|
 |<img src="images/plane.gif" width=140>|<img src="images/plane2.gif" width=140>|
 
-The plane detection can be available by ARKit 1.0, but this richer detection is available by 1.5.
+The plane detection can be available by ARKit 1.0, but this richer (available for not only rectangle) detection is available by 1.5.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/PlaneDetection)
 
