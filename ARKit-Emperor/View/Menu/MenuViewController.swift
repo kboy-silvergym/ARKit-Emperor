@@ -23,6 +23,7 @@ class MenuViewController: UIViewController {
         "Physics",
         "ColorGrading",
         "Particle",
+        "Shader",
         "PlaneDetection",
         "Face",
         "Memo",

@@ -45,6 +45,10 @@
 		28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FA9921415F55006C4577 /* LaunchScreen.storyboard */; };
 		28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FAAB2144EF98006C4577 /* MenuViewController.swift */; };
 		28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C4FAAD2144EFA3006C4577 /* Memo.storyboard */; };
+		28C8FA6F21CE2A810087181B /* Shader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA6E21CE2A810087181B /* Shader.storyboard */; };
+		28C8FA7121CE2A910087181B /* ShaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7021CE2A910087181B /* ShaderViewController.swift */; };
+		28C8FA7321CE2BCE0087181B /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7221CE2BCE0087181B /* NodeRender.metal */; };
+		28C8FA7521CE2C060087181B /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7421CE2C060087181B /* NodeTechnique.plist */; };
 		28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */; };
 		28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */; };
 		28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD883321C86E9F00588ED8 /* Bubble.storyboard */; };
@@ -95,6 +99,10 @@
 		28C4FA9C21415F55006C4577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28C4FAAB2144EF98006C4577 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		28C4FAAD2144EFA3006C4577 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
+		28C8FA6E21CE2A810087181B /* Shader.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shader.storyboard; sourceTree = "<group>"; };
+		28C8FA7021CE2A910087181B /* ShaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderViewController.swift; sourceTree = "<group>"; };
+		28C8FA7221CE2BCE0087181B /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
+		28C8FA7421CE2C060087181B /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomModel.storyboard; sourceTree = "<group>"; };
 		28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
 		28DD883321C86E9F00588ED8 /* Bubble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubble.storyboard; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 				280E302821C93D0700D5BEBA /* Physics */,
 				28982A8221C3F3120081E925 /* ColorGrading */,
 				284FCBAA21CB1C5D00EB476D /* Particle */,
+				28C8FA6D21CE2A650087181B /* Shader */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
@@ -316,6 +325,17 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		28C8FA6D21CE2A650087181B /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				28C8FA6E21CE2A810087181B /* Shader.storyboard */,
+				28C8FA7021CE2A910087181B /* ShaderViewController.swift */,
+				28C8FA7221CE2BCE0087181B /* NodeRender.metal */,
+				28C8FA7421CE2C060087181B /* NodeTechnique.plist */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
 		28D9CD7121B2D87D0008C3C4 /* CustomModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,10 +426,12 @@
 				281641002146B24000896FFE /* BusinessCard.storyboard in Resources */,
 				288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */,
 				28C4FA9B21415F55006C4577 /* LaunchScreen.storyboard in Resources */,
+				28C8FA7521CE2C060087181B /* NodeTechnique.plist in Resources */,
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
 				284FCBAC21CB1C8000EB476D /* Particle.storyboard in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
+				28C8FA6F21CE2A810087181B /* Shader.storyboard in Resources */,
 				28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */,
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */,
@@ -449,6 +471,8 @@
 				285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */,
 				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
+				28C8FA7121CE2A910087181B /* ShaderViewController.swift in Sources */,
+				28C8FA7321CE2BCE0087181B /* NodeRender.metal in Sources */,
 				28982A8621C3F3700081E925 /* ColorGradingViewController.swift in Sources */,
 				28C4FAAC2144EF98006C4577 /* MenuViewController.swift in Sources */,
 				28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */,
