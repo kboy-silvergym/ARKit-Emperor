@@ -49,6 +49,8 @@
 		28C8FA7121CE2A910087181B /* ShaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7021CE2A910087181B /* ShaderViewController.swift */; };
 		28C8FA7321CE2BCE0087181B /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7221CE2BCE0087181B /* NodeRender.metal */; };
 		28C8FA7521CE2C060087181B /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7421CE2C060087181B /* NodeTechnique.plist */; };
+		28C8FA7821CF4AD20087181B /* ARPointCloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7721CF4AD20087181B /* ARPointCloud.storyboard */; };
+		28C8FA7A21CF4AE00087181B /* ARPointCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7921CF4AE00087181B /* ARPointCloudViewController.swift */; };
 		28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */; };
 		28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */; };
 		28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD883321C86E9F00588ED8 /* Bubble.storyboard */; };
@@ -103,6 +105,8 @@
 		28C8FA7021CE2A910087181B /* ShaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderViewController.swift; sourceTree = "<group>"; };
 		28C8FA7221CE2BCE0087181B /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
 		28C8FA7421CE2C060087181B /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
+		28C8FA7721CF4AD20087181B /* ARPointCloud.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARPointCloud.storyboard; sourceTree = "<group>"; };
+		28C8FA7921CF4AE00087181B /* ARPointCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPointCloudViewController.swift; sourceTree = "<group>"; };
 		28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomModel.storyboard; sourceTree = "<group>"; };
 		28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
 		28DD883321C86E9F00588ED8 /* Bubble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubble.storyboard; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				28982A8221C3F3120081E925 /* ColorGrading */,
 				284FCBAA21CB1C5D00EB476D /* Particle */,
 				28C8FA6D21CE2A650087181B /* Shader */,
+				28C8FA7621CF4A960087181B /* ARPointCloud */,
 				28ABE77A2151DA7900EF50E1 /* PlaneDetection */,
 				281641032146B2E600896FFE /* Face */,
 				28C4FAA32144EE2A006C4577 /* Memo */,
@@ -336,6 +341,15 @@
 			path = Shader;
 			sourceTree = "<group>";
 		};
+		28C8FA7621CF4A960087181B /* ARPointCloud */ = {
+			isa = PBXGroup;
+			children = (
+				28C8FA7721CF4AD20087181B /* ARPointCloud.storyboard */,
+				28C8FA7921CF4AE00087181B /* ARPointCloudViewController.swift */,
+			);
+			path = ARPointCloud;
+			sourceTree = "<group>";
+		};
 		28D9CD7121B2D87D0008C3C4 /* CustomModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +460,7 @@
 				28982A8421C3F35B0081E925 /* ColorGrading.storyboard in Resources */,
 				288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */,
 				280E302A21C93D1600D5BEBA /* Physics.storyboard in Resources */,
+				28C8FA7821CF4AD20087181B /* ARPointCloud.storyboard in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +474,7 @@
 			files = (
 				287176D32144F800000E4470 /* TextNode.swift in Sources */,
 				280E302C21C93D2F00D5BEBA /* PhyisicsViewController.swift in Sources */,
+				28C8FA7A21CF4AE00087181B /* ARPointCloudViewController.swift in Sources */,
 				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
 				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9yA-Rw-kJI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Point Cloud View Controller-->
+        <scene sceneID="n6Q-le-ifI">
+            <objects>
+                <viewController id="9yA-Rw-kJI" customClass="ARPointCloudViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K0b-wB-Nl0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBJ-oO-DB7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eBJ-oO-DB7" firstAttribute="top" secondItem="K0b-wB-Nl0" secondAttribute="top" id="NyD-VG-eY4"/>
+                            <constraint firstItem="eBJ-oO-DB7" firstAttribute="leading" secondItem="B92-Kp-Ori" secondAttribute="leading" id="iGV-2R-Plp"/>
+                            <constraint firstItem="eBJ-oO-DB7" firstAttribute="trailing" secondItem="B92-Kp-Ori" secondAttribute="trailing" id="vSW-lO-OCt"/>
+                            <constraint firstAttribute="bottom" secondItem="eBJ-oO-DB7" secondAttribute="bottom" id="yG1-xk-rGp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B92-Kp-Ori"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="eBJ-oO-DB7" id="KPg-T6-Mgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7E-8X-GdF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1061.0194902548726"/>
+        </scene>
+    </scenes>
+</document>
