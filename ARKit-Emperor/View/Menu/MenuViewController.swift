@@ -24,6 +24,7 @@ class MenuViewController: UIViewController {
         "ColorGrading",
         "Particle",
         "Shader",
+        "ARPointCloud",
         "PlaneDetection",
         "Face",
         "Memo",

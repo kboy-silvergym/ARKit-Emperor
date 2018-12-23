@@ -122,6 +122,22 @@ Apple's official docs is https://developer.apple.com/documentation/scenekit/scnt
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Shader)
 
+## ARPointCloud
+
+In default, you can show feature points easily by coding below.
+
+```swift
+sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+```
+
+In this table, `default` is the default one.
+
+|default|custom1|custom2|
+|:-:|:-:|:-:|
+|<img src="images/point1.gif" width=140>|<img src="images/point2.gif" width=140>|<img src="images/point3.gif" width=140>|
+
+If you show feature points like custom1 or custom2, chek [the code](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/ARPointCloud).
+
 ## Plane Detection (ARKit 1.5~)
 
 |horizontal|vertical|
