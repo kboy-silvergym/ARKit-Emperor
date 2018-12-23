@@ -39,7 +39,7 @@ class ARPointCloudViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sceneView.delegate = self
+        sceneView.session.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
     }
     
@@ -57,10 +57,9 @@ class ARPointCloudViewController: UIViewController {
     
 }
 
-extension ARPointCloudViewController: ARSCNViewDelegate {
-    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        guard let frame = sceneView.session.currentFrame,
-            let pointPositions = frame.rawFeaturePoints?.points else {
+extension ARPointCloudViewController: ARSessionDelegate {
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        guard let pointPositions = frame.rawFeaturePoints?.points else {
             return
         }
         // Remove past points
