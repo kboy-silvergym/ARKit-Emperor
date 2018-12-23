@@ -17,6 +17,7 @@ class MenuViewController: UIViewController {
         "Doodle",
         "Doodle2",
         "CustomModel",
+        "Material",
         "Picture",
         "Action",
         "Bubble",
