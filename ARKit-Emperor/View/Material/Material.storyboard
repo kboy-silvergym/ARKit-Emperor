@@ -20,17 +20,69 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqk-15-ISu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yEG-tZ-x2Q">
+                                <rect key="frame" x="16" y="56" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Diffuse"/>
+                                    <segment title="Specular"/>
+                                    <segment title="Normal"/>
+                                    <segment title="Reflective"/>
+                                    <segment title="Transparent"/>
+                                    <segment title="Occlusion"/>
+                                    <segment title="Illumimation"/>
+                                    <segment title="Emission"/>
+                                    <segment title="Multiply"/>
+                                    <segment title="Ambient"/>
+                                    <segment title="Displacement"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="materialSegmentChanged:" destination="kcu-6G-hAd" eventType="valueChanged" id="fmz-K3-xEf"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K63-Yl-zOy">
+                                <rect key="frame" x="311" y="92" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-cy-xof">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Constant"/>
+                                    <segment title="Lambert"/>
+                                    <segment title="Blinn"/>
+                                    <segment title="Phong"/>
+                                    <segment title="Physically Based"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="lightSegmentChanged:" destination="kcu-6G-hAd" eventType="valueChanged" id="CZc-RH-BOn"/>
+                                    <action selector="materialSegmentChanged:" destination="kcu-6G-hAd" eventType="valueChanged" id="Bfd-yp-nTd"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jMV-cy-xof" firstAttribute="top" secondItem="MgQ-Ao-K3e" secondAttribute="top" id="Gn7-eg-7ag"/>
+                            <constraint firstItem="MgQ-Ao-K3e" firstAttribute="trailing" secondItem="K63-Yl-zOy" secondAttribute="trailing" constant="16" id="MDH-yX-haE"/>
+                            <constraint firstItem="yEG-tZ-x2Q" firstAttribute="top" secondItem="jMV-cy-xof" secondAttribute="bottom" constant="8" id="PPj-Wi-bDM"/>
+                            <constraint firstItem="K63-Yl-zOy" firstAttribute="top" secondItem="yEG-tZ-x2Q" secondAttribute="bottom" constant="8" id="W2b-1v-XvO"/>
+                            <constraint firstItem="MgQ-Ao-K3e" firstAttribute="trailing" secondItem="yEG-tZ-x2Q" secondAttribute="trailing" constant="16" id="YRE-MR-hw1"/>
                             <constraint firstItem="Uqk-15-ISu" firstAttribute="trailing" secondItem="MgQ-Ao-K3e" secondAttribute="trailing" id="YhD-ut-EMl"/>
+                            <constraint firstItem="jMV-cy-xof" firstAttribute="leading" secondItem="MgQ-Ao-K3e" secondAttribute="leading" constant="16" id="ac9-dK-PUU"/>
                             <constraint firstItem="Uqk-15-ISu" firstAttribute="top" secondItem="PHL-Rb-Iei" secondAttribute="top" id="btb-dX-FWO"/>
                             <constraint firstItem="Uqk-15-ISu" firstAttribute="leading" secondItem="MgQ-Ao-K3e" secondAttribute="leading" id="inR-tc-N2c"/>
+                            <constraint firstItem="yEG-tZ-x2Q" firstAttribute="leading" secondItem="MgQ-Ao-K3e" secondAttribute="leading" constant="16" id="lds-si-GCM"/>
+                            <constraint firstItem="MgQ-Ao-K3e" firstAttribute="trailing" secondItem="jMV-cy-xof" secondAttribute="trailing" constant="16" id="ncL-6R-OTm"/>
                             <constraint firstAttribute="bottom" secondItem="Uqk-15-ISu" secondAttribute="bottom" id="vQ7-sK-A3o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MgQ-Ao-K3e"/>
                     </view>
                     <connections>
+                        <outlet property="infoLabel" destination="K63-Yl-zOy" id="8My-0V-vDW"/>
+                        <outlet property="lightSegmentControl" destination="jMV-cy-xof" id="hbk-GS-yq8"/>
+                        <outlet property="materialSegmentControl" destination="yEG-tZ-x2Q" id="KcI-CY-cpr"/>
                         <outlet property="sceneView" destination="Uqk-15-ISu" id="ltf-Uf-FgV"/>
                     </connections>
                 </viewController>

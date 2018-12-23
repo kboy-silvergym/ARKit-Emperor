@@ -63,6 +63,16 @@ You can create 3D model by code using bezier path
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/CustomModel)
 
+## Material
+
+|Lightning Model|Material Property|Intesity|
+|:--:|:--:|:--:|
+|<img src="images/lightning_model.gif" width=140>|<img src="images/material_property.gif" width=140>|<img src="images/intensity.gif" width=140>|
+
+Let's debug how to change the appearance of node.
+
+The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Material)
+
 ## Placing pictures
 
 <img src="images/picture.gif" width=140>
