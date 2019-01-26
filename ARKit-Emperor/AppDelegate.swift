@@ -13,14 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         let navigationAttributes: [NSAttributedString.Key : Any] = [
-            NSAttributedStringKey.font: UIFont(name: "StarJedi", size: 20)!,
-            NSAttributedStringKey.foregroundColor: UIColor.white
+            NSAttributedString.Key.font: UIFont(name: "StarJedi", size: 20)!,
+            NSAttributedString.Key.foregroundColor: UIColor.white
         ]
         UINavigationBar.appearance().titleTextAttributes = navigationAttributes
         return true
