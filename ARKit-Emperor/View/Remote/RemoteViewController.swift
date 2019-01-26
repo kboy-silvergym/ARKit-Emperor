@@ -191,9 +191,9 @@ extension RemoteViewController: ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let objectAnchor = anchor as? ARObjectAnchor {
-            print("detected!: \(anchor.name)")
-            
-        }
+//        if let objectAnchor = anchor as? ARObjectAnchor {
+//            print("detected!: \(anchor.name)")
+//
+//        }
     }
 }

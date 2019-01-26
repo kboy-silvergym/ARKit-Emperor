@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        let navigationAttributes = [
-            NSAttributedStringKey.font: UIFont(name: "StarJedi", size: 20),
+        let navigationAttributes: [NSAttributedString.Key : Any] = [
+            NSAttributedStringKey.font: UIFont(name: "StarJedi", size: 20)!,
             NSAttributedStringKey.foregroundColor: UIColor.white
         ]
         UINavigationBar.appearance().titleTextAttributes = navigationAttributes
