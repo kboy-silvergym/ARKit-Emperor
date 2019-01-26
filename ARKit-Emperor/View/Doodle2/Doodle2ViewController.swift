@@ -80,13 +80,14 @@ extension Doodle2ViewController {
     }
     
     private func addPointAndCreateVertices() {
-        guard let camera = sceneView.pointOfView else {
+        guard let camera: SCNNode = sceneView.pointOfView else {
             return
         }
         
         // world coordinates
-        let pointWorld = sceneView.unprojectPoint(SCNVector3Make(Float(pointTouching.x), Float(pointTouching.y), 0.997))
-        let pointCamera = camera.convertPosition(pointWorld, from: nil)
+        let pointScreen: SCNVector3 = SCNVector3Make(Float(pointTouching.x), Float(pointTouching.y), 0.997)
+        let pointWorld: SCNVector3 = sceneView.unprojectPoint(pointScreen)
+        let pointCamera: SCNVector3 = camera.convertPosition(pointWorld, from: nil)
         
         // camera coordinates
         let x: Float = pointCamera.x
@@ -97,26 +98,26 @@ extension Doodle2ViewController {
         // triangle vertices
         
         // camera coordinates
-        let vertice0InCamera = SCNVector3Make(
+        let vertice0InCamera: SCNVector3 = SCNVector3Make(
             x,
             y - (sqrt(3) * lengthOfTriangle / 3),
             z
         )
-        let vertice1InCamera = SCNVector3Make(
+        let vertice1InCamera: SCNVector3 = SCNVector3Make(
             x - lengthOfTriangle / 2,
             y + (sqrt(3) * lengthOfTriangle / 6),
             z
         )
-        let vertice2InCamera = SCNVector3Make(
+        let vertice2InCamera: SCNVector3 = SCNVector3Make(
             x + lengthOfTriangle / 2,
             y +  (sqrt(3) * lengthOfTriangle / 6),
             z
         )
         
         // world coordinates
-        let vertice0 = camera.convertPosition(vertice0InCamera, to: nil)
-        let vertice1 = camera.convertPosition(vertice1InCamera, to: nil)
-        let vertice2 = camera.convertPosition(vertice2InCamera, to: nil)
+        let vertice0: SCNVector3 = camera.convertPosition(vertice0InCamera, to: nil)
+        let vertice1: SCNVector3 = camera.convertPosition(vertice1InCamera, to: nil)
+        let vertice2: SCNVector3 = camera.convertPosition(vertice2InCamera, to: nil)
         polygonVertices += [vertice0, vertice1, vertice2]
         centerVerticesCount += 1
         
@@ -165,5 +166,3 @@ extension Doodle2ViewController: ARSCNViewDelegate {
     }
     
 }
-
-
