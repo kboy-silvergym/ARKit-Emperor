@@ -50,13 +50,6 @@ class FaceViewController: UIViewController {
 }
 
 extension FaceViewController: ARSCNViewDelegate {
-    
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        guard let faceAnchor = anchor as? ARFaceAnchor else {
-            return
-        }
-    }
-    
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let faceAnchor = anchor as? ARFaceAnchor else {
             return
