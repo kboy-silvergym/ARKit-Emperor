@@ -25,16 +25,12 @@
 		284FCBAE21CB1C8D00EB476D /* ParticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FCBAD21CB1C8D00EB476D /* ParticleViewController.swift */; };
 		285F9477217B5B8500E9A6AE /* Action.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F9476217B5B8500E9A6AE /* Action.storyboard */; };
 		285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F9478217B5B9700E9A6AE /* ActionViewController.swift */; };
-		2867390721C7DF9900237704 /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2867390621C7DF9900237704 /* Gesture.storyboard */; };
-		2867390921C7DFA400237704 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867390821C7DFA400237704 /* GestureViewController.swift */; };
 		287176D32144F800000E4470 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287176D22144F800000E4470 /* TextNode.swift */; };
 		288D3BF421452DA500855D36 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF121452DA500855D36 /* Starjhol.ttf */; };
 		288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */; };
 		288D3BF621452DA500855D36 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288D3BF321452DA500855D36 /* Starjedi.ttf */; };
 		28982A8421C3F35B0081E925 /* ColorGrading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28982A8321C3F35B0081E925 /* ColorGrading.storyboard */; };
 		28982A8621C3F3700081E925 /* ColorGradingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982A8521C3F3700081E925 /* ColorGradingViewController.swift */; };
-		289C33EE2146A19C00643301 /* Remote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289C33ED2146A19C00643301 /* Remote.storyboard */; };
-		289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289C33EF2146A1A800643301 /* RemoteViewController.swift */; };
 		28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */; };
 		28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */; };
 		28C4FA8F21415F54006C4577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FA8E21415F54006C4577 /* AppDelegate.swift */; };
@@ -51,46 +47,11 @@
 		28C8FA7521CE2C060087181B /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7421CE2C060087181B /* NodeTechnique.plist */; };
 		28C8FA7821CF4AD20087181B /* ARPointCloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7721CF4AD20087181B /* ARPointCloud.storyboard */; };
 		28C8FA7A21CF4AE00087181B /* ARPointCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7921CF4AE00087181B /* ARPointCloudViewController.swift */; };
-		28C8FA7D21CF62E50087181B /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8FA7C21CF62E50087181B /* Material.storyboard */; };
-		28C8FA7F21CF63010087181B /* MaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA7E21CF63010087181B /* MaterialViewController.swift */; };
-		28C8FA8921CF776F0087181B /* ColorSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C8FA8721CF776F0087181B /* ColorSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28C8FA8C21CF776F0087181B /* ColorSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C8FA8521CF776E0087181B /* ColorSlider.framework */; };
-		28C8FA8D21CF776F0087181B /* ColorSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C8FA8521CF776E0087181B /* ColorSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		28C8FA9A21CF77960087181B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9221CF77950087181B /* PreviewView.swift */; };
-		28C8FA9B21CF77960087181B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9321CF77950087181B /* GradientView.swift */; };
-		28C8FA9C21CF77960087181B /* DefaultPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9421CF77960087181B /* DefaultPreviewView.swift */; };
-		28C8FA9D21CF77960087181B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9621CF77960087181B /* Gradient.swift */; };
-		28C8FA9E21CF77960087181B /* ColorSliderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9721CF77960087181B /* ColorSliderExtensions.swift */; };
-		28C8FA9F21CF77960087181B /* HSBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9821CF77960087181B /* HSBColor.swift */; };
-		28C8FAA021CF77960087181B /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FA9921CF77960087181B /* ColorSlider.swift */; };
-		28C8FAAA21CF7AC20087181B /* ThicknessSliderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C8FAA821CF7AC20087181B /* ThicknessSliderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28C8FAAD21CF7AC20087181B /* ThicknessSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C8FAA621CF7AC20087181B /* ThicknessSlider.framework */; };
-		28C8FAAE21CF7AC20087181B /* ThicknessSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C8FAA621CF7AC20087181B /* ThicknessSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		28C8FAB321CF7AD70087181B /* ThicknessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8FAB221CF7AD70087181B /* ThicknessSlider.swift */; };
 		28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */; };
 		28D9CD7521B2D8B70008C3C4 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */; };
 		28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD883321C86E9F00588ED8 /* Bubble.storyboard */; };
 		28DD883621C86EC400588ED8 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD883521C86EC400588ED8 /* BubbleViewController.swift */; };
-		28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB173521B9F43E00AB6A6F /* PracticeViewController.swift */; };
-		28EB173821B9F44F00AB6A6F /* Practice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EB173721B9F44F00AB6A6F /* Practice.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		28C8FA8A21CF776F0087181B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28C4FA8321415F54006C4577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28C8FA8421CF776E0087181B;
-			remoteInfo = ColorSlider;
-		};
-		28C8FAAB21CF7AC20087181B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28C4FA8321415F54006C4577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28C8FAA521CF7AC20087181B;
-			remoteInfo = ThicknessSliderView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		28C8FA9121CF776F0087181B /* Embed Frameworks */ = {
@@ -99,8 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				28C8FA8D21CF776F0087181B /* ColorSlider.framework in Embed Frameworks */,
-				28C8FAAE21CF7AC20087181B /* ThicknessSlider.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,16 +86,12 @@
 		284FCBAD21CB1C8D00EB476D /* ParticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleViewController.swift; sourceTree = "<group>"; };
 		285F9476217B5B8500E9A6AE /* Action.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Action.storyboard; sourceTree = "<group>"; };
 		285F9478217B5B9700E9A6AE /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		2867390621C7DF9900237704 /* Gesture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gesture.storyboard; sourceTree = "<group>"; };
-		2867390821C7DFA400237704 /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		287176D22144F800000E4470 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 		288D3BF121452DA500855D36 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		288D3BF221452DA500855D36 /* Star_Jedi_Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Star_Jedi_Rounded.ttf; sourceTree = "<group>"; };
 		288D3BF321452DA500855D36 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		28982A8321C3F35B0081E925 /* ColorGrading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorGrading.storyboard; sourceTree = "<group>"; };
 		28982A8521C3F3700081E925 /* ColorGradingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradingViewController.swift; sourceTree = "<group>"; };
-		289C33ED2146A19C00643301 /* Remote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Remote.storyboard; sourceTree = "<group>"; };
-		289C33EF2146A1A800643301 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
 		28ABE77B2151DA9400EF50E1 /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
 		28ABE77D2151DAA700EF50E1 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Emperor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,48 +110,14 @@
 		28C8FA7421CE2C060087181B /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		28C8FA7721CF4AD20087181B /* ARPointCloud.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARPointCloud.storyboard; sourceTree = "<group>"; };
 		28C8FA7921CF4AE00087181B /* ARPointCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPointCloudViewController.swift; sourceTree = "<group>"; };
-		28C8FA7C21CF62E50087181B /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Material.storyboard; sourceTree = "<group>"; };
-		28C8FA7E21CF63010087181B /* MaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialViewController.swift; sourceTree = "<group>"; };
-		28C8FA8521CF776E0087181B /* ColorSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C8FA8721CF776F0087181B /* ColorSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSlider.h; sourceTree = "<group>"; };
-		28C8FA8821CF776F0087181B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28C8FA9221CF77950087181B /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
-		28C8FA9321CF77950087181B /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		28C8FA9421CF77960087181B /* DefaultPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPreviewView.swift; sourceTree = "<group>"; };
-		28C8FA9621CF77960087181B /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
-		28C8FA9721CF77960087181B /* ColorSliderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSliderExtensions.swift; sourceTree = "<group>"; };
-		28C8FA9821CF77960087181B /* HSBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBColor.swift; sourceTree = "<group>"; };
-		28C8FA9921CF77960087181B /* ColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
-		28C8FAA621CF7AC20087181B /* ThicknessSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThicknessSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C8FAA821CF7AC20087181B /* ThicknessSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThicknessSliderView.h; sourceTree = "<group>"; };
-		28C8FAA921CF7AC20087181B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28C8FAB221CF7AD70087181B /* ThicknessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThicknessSlider.swift; sourceTree = "<group>"; };
 		28D9CD7221B2D89E0008C3C4 /* CustomModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomModel.storyboard; sourceTree = "<group>"; };
 		28D9CD7421B2D8B70008C3C4 /* CustomModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
 		28DD883321C86E9F00588ED8 /* Bubble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubble.storyboard; sourceTree = "<group>"; };
 		28DD883521C86EC400588ED8 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
-		28EB173521B9F43E00AB6A6F /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
-		28EB173721B9F44F00AB6A6F /* Practice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		28C4FA8821415F54006C4577 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C8FA8C21CF776F0087181B /* ColorSlider.framework in Frameworks */,
-				28C8FAAD21CF7AC20087181B /* ThicknessSlider.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FA8221CF776E0087181B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FAA321CF7AC20087181B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,15 +172,6 @@
 			path = Action;
 			sourceTree = "<group>";
 		};
-		2867390521C7DF8100237704 /* Gesture */ = {
-			isa = PBXGroup;
-			children = (
-				2867390621C7DF9900237704 /* Gesture.storyboard */,
-				2867390821C7DFA400237704 /* GestureViewController.swift */,
-			);
-			path = Gesture;
-			sourceTree = "<group>";
-		};
 		288D3BEF21452D5400855D36 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,12 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				28C4FAAA2144EF55006C4577 /* Menu */,
-				28EB173421B9F41D00AB6A6F /* Practice */,
-				2867390521C7DF8100237704 /* Gesture */,
 				28C4FAA82144EF27006C4577 /* Doodle */,
 				282711C921BDDDA80098CBEA /* Doodle2 */,
 				28D9CD7121B2D87D0008C3C4 /* CustomModel */,
-				28C8FA7B21CF62D10087181B /* Material */,
 				28C4FAA92144EF37006C4577 /* Picture */,
 				285F9475217B5B3900E9A6AE /* Action */,
 				28DD883221C86E8900588ED8 /* Bubble */,
@@ -293,7 +202,6 @@
 				28C4FAA32144EE2A006C4577 /* Memo */,
 				28C4FAA52144EE66006C4577 /* Mirror */,
 				28C4FAA62144EE7B006C4577 /* BusinessCard */,
-				28C4FAA42144EE55006C4577 /* Remote */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,8 +229,6 @@
 			children = (
 				280A32B421507566002D8F8C /* README.md */,
 				28C4FA8D21415F54006C4577 /* ARKit-Emperor */,
-				28C8FA8621CF776F0087181B /* ColorSlider */,
-				28C8FAA721CF7AC20087181B /* ThicknessSlider */,
 				28C4FA8C21415F54006C4577 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,8 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */,
-				28C8FA8521CF776E0087181B /* ColorSlider.framework */,
-				28C8FAA621CF7AC20087181B /* ThicknessSlider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -359,15 +263,6 @@
 				287176D22144F800000E4470 /* TextNode.swift */,
 			);
 			path = Memo;
-			sourceTree = "<group>";
-		};
-		28C4FAA42144EE55006C4577 /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				289C33ED2146A19C00643301 /* Remote.storyboard */,
-				289C33EF2146A1A800643301 /* RemoteViewController.swift */,
-			);
-			path = Remote;
 			sourceTree = "<group>";
 		};
 		28C4FAA52144EE66006C4577 /* Mirror */ = {
@@ -435,49 +330,6 @@
 			path = ARPointCloud;
 			sourceTree = "<group>";
 		};
-		28C8FA7B21CF62D10087181B /* Material */ = {
-			isa = PBXGroup;
-			children = (
-				28C8FA7C21CF62E50087181B /* Material.storyboard */,
-				28C8FA7E21CF63010087181B /* MaterialViewController.swift */,
-			);
-			path = Material;
-			sourceTree = "<group>";
-		};
-		28C8FA8621CF776F0087181B /* ColorSlider */ = {
-			isa = PBXGroup;
-			children = (
-				28C8FA9521CF77960087181B /* Internal */,
-				28C8FA9921CF77960087181B /* ColorSlider.swift */,
-				28C8FA9421CF77960087181B /* DefaultPreviewView.swift */,
-				28C8FA9321CF77950087181B /* GradientView.swift */,
-				28C8FA9221CF77950087181B /* PreviewView.swift */,
-				28C8FA8721CF776F0087181B /* ColorSlider.h */,
-				28C8FA8821CF776F0087181B /* Info.plist */,
-			);
-			path = ColorSlider;
-			sourceTree = "<group>";
-		};
-		28C8FA9521CF77960087181B /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				28C8FA9621CF77960087181B /* Gradient.swift */,
-				28C8FA9721CF77960087181B /* ColorSliderExtensions.swift */,
-				28C8FA9821CF77960087181B /* HSBColor.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		28C8FAA721CF7AC20087181B /* ThicknessSlider */ = {
-			isa = PBXGroup;
-			children = (
-				28C8FAA821CF7AC20087181B /* ThicknessSliderView.h */,
-				28C8FAB221CF7AD70087181B /* ThicknessSlider.swift */,
-				28C8FAA921CF7AC20087181B /* Info.plist */,
-			);
-			path = ThicknessSlider;
-			sourceTree = "<group>";
-		};
 		28D9CD7121B2D87D0008C3C4 /* CustomModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,35 +348,7 @@
 			path = Bubble;
 			sourceTree = "<group>";
 		};
-		28EB173421B9F41D00AB6A6F /* Practice */ = {
-			isa = PBXGroup;
-			children = (
-				28EB173721B9F44F00AB6A6F /* Practice.storyboard */,
-				28EB173521B9F43E00AB6A6F /* PracticeViewController.swift */,
-			);
-			path = Practice;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		28C8FA8021CF776E0087181B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C8FA8921CF776F0087181B /* ColorSlider.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FAA121CF7AC20087181B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C8FAAA21CF7AC20087181B /* ThicknessSliderView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		28C4FA8A21415F54006C4577 /* ARKit-Emperor */ = {
@@ -539,49 +363,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				28C8FA8B21CF776F0087181B /* PBXTargetDependency */,
-				28C8FAAC21CF7AC20087181B /* PBXTargetDependency */,
 			);
 			name = "ARKit-Emperor";
 			productName = "ARKit-Emperor";
 			productReference = 28C4FA8B21415F54006C4577 /* ARKit-Emperor.app */;
 			productType = "com.apple.product-type.application";
-		};
-		28C8FA8421CF776E0087181B /* ColorSlider */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28C8FA8E21CF776F0087181B /* Build configuration list for PBXNativeTarget "ColorSlider" */;
-			buildPhases = (
-				28C8FA8021CF776E0087181B /* Headers */,
-				28C8FA8121CF776E0087181B /* Sources */,
-				28C8FA8221CF776E0087181B /* Frameworks */,
-				28C8FA8321CF776E0087181B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ColorSlider;
-			productName = ColorSlider;
-			productReference = 28C8FA8521CF776E0087181B /* ColorSlider.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		28C8FAA521CF7AC20087181B /* ThicknessSlider */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28C8FAAF21CF7AC30087181B /* Build configuration list for PBXNativeTarget "ThicknessSlider" */;
-			buildPhases = (
-				28C8FAA121CF7AC20087181B /* Headers */,
-				28C8FAA221CF7AC20087181B /* Sources */,
-				28C8FAA321CF7AC20087181B /* Frameworks */,
-				28C8FAA421CF7AC20087181B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ThicknessSlider;
-			productName = ThicknessSliderView;
-			productReference = 28C8FAA621CF7AC20087181B /* ThicknessSlider.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -595,14 +381,6 @@
 				TargetAttributes = {
 					28C4FA8A21415F54006C4577 = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					28C8FA8421CF776E0087181B = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
-					};
-					28C8FAA521CF7AC20087181B = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -620,8 +398,6 @@
 			projectRoot = "";
 			targets = (
 				28C4FA8A21415F54006C4577 /* ARKit-Emperor */,
-				28C8FA8421CF776E0087181B /* ColorSlider */,
-				28C8FAA521CF7AC20087181B /* ThicknessSlider */,
 			);
 		};
 /* End PBXProject section */
@@ -640,17 +416,13 @@
 				28C4FA9821415F55006C4577 /* Assets.xcassets in Resources */,
 				284FCBAC21CB1C8000EB476D /* Particle.storyboard in Resources */,
 				28C4FA9621415F54006C4577 /* Main.storyboard in Resources */,
-				28C8FA7D21CF62E50087181B /* Material.storyboard in Resources */,
 				281641092146B4A700896FFE /* Picture.storyboard in Resources */,
 				28C8FA6F21CE2A810087181B /* Shader.storyboard in Resources */,
 				28DD883421C86E9F00588ED8 /* Bubble.storyboard in Resources */,
 				281640FC2146B1F000896FFE /* Mirror.storyboard in Resources */,
 				282711CD21BDDDC50098CBEA /* Doodle2.storyboard in Resources */,
-				28EB173821B9F44F00AB6A6F /* Practice.storyboard in Resources */,
 				288D3BF521452DA500855D36 /* Star_Jedi_Rounded.ttf in Resources */,
 				28ABE77C2151DA9400EF50E1 /* PlaneDetection.storyboard in Resources */,
-				2867390721C7DF9900237704 /* Gesture.storyboard in Resources */,
-				289C33EE2146A19C00643301 /* Remote.storyboard in Resources */,
 				28D9CD7321B2D89E0008C3C4 /* CustomModel.storyboard in Resources */,
 				281641052146B36200896FFE /* Face.storyboard in Resources */,
 				2816410B2146B4BA00896FFE /* Doodle.storyboard in Resources */,
@@ -659,20 +431,6 @@
 				280E302A21C93D1600D5BEBA /* Physics.storyboard in Resources */,
 				28C8FA7821CF4AD20087181B /* ARPointCloud.storyboard in Resources */,
 				28C4FAAE2144EFA4006C4577 /* Memo.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FA8321CF776E0087181B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FAA421CF7AC20087181B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,14 +446,10 @@
 				28C8FA7A21CF4AE00087181B /* ARPointCloudViewController.swift in Sources */,
 				281641132146B58200896FFE /* PictureViewController.swift in Sources */,
 				281641072146B36D00896FFE /* FaceViewController.swift in Sources */,
-				28C8FA7F21CF63010087181B /* MaterialViewController.swift in Sources */,
-				28EB173621B9F43E00AB6A6F /* PracticeViewController.swift in Sources */,
 				28DD883621C86EC400588ED8 /* BubbleViewController.swift in Sources */,
 				284FCBAE21CB1C8D00EB476D /* ParticleViewController.swift in Sources */,
-				289C33F02146A1A800643301 /* RemoteViewController.swift in Sources */,
 				28C4FA9321415F54006C4577 /* MemoViewController.swift in Sources */,
 				282711CB21BDDDBC0098CBEA /* Doodle2ViewController.swift in Sources */,
-				2867390921C7DFA400237704 /* GestureViewController.swift in Sources */,
 				285F9479217B5B9700E9A6AE /* ActionViewController.swift in Sources */,
 				28ABE77E2151DAA700EF50E1 /* PlaneDetectionViewController.swift in Sources */,
 				281641022146B25400896FFE /* BusinessCardViewController.swift in Sources */,
@@ -710,42 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28C8FA8121CF776E0087181B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C8FAA021CF77960087181B /* ColorSlider.swift in Sources */,
-				28C8FA9E21CF77960087181B /* ColorSliderExtensions.swift in Sources */,
-				28C8FA9F21CF77960087181B /* HSBColor.swift in Sources */,
-				28C8FA9C21CF77960087181B /* DefaultPreviewView.swift in Sources */,
-				28C8FA9B21CF77960087181B /* GradientView.swift in Sources */,
-				28C8FA9A21CF77960087181B /* PreviewView.swift in Sources */,
-				28C8FA9D21CF77960087181B /* Gradient.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28C8FAA221CF7AC20087181B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C8FAB321CF7AD70087181B /* ThicknessSlider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		28C8FA8B21CF776F0087181B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28C8FA8421CF776E0087181B /* ColorSlider */;
-			targetProxy = 28C8FA8A21CF776F0087181B /* PBXContainerItemProxy */;
-		};
-		28C8FAAC21CF7AC20087181B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28C8FAA521CF7AC20087181B /* ThicknessSlider */;
-			targetProxy = 28C8FAAB21CF7AC20087181B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		28C4FA9421415F54006C4577 /* Main.storyboard */ = {
@@ -884,7 +603,6 @@
 		28C4FAA021415F55006C4577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FB6D8X43R8;
@@ -905,7 +623,6 @@
 		28C4FAA121415F55006C4577 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FB6D8X43R8;
@@ -920,134 +637,6 @@
 				SWIFT_VERSION = 4.2;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		28C8FA8F21CF776F0087181B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ColorSlider/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = tfw.ColorSlider;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		28C8FA9021CF776F0087181B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ColorSlider/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = tfw.ColorSlider;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		28C8FAB021CF7AC30087181B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ThicknessSlider/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.kboy.ThicknessSlider;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		28C8FAB121CF7AC30087181B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ThicknessSlider/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.kboy.ThicknessSlider;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1068,24 +657,6 @@
 			buildConfigurations = (
 				28C4FAA021415F55006C4577 /* Debug */,
 				28C4FAA121415F55006C4577 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28C8FA8E21CF776F0087181B /* Build configuration list for PBXNativeTarget "ColorSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28C8FA8F21CF776F0087181B /* Debug */,
-				28C8FA9021CF776F0087181B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28C8FAAF21CF7AC30087181B /* Build configuration list for PBXNativeTarget "ThicknessSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28C8FAB021CF7AC30087181B /* Debug */,
-				28C8FAB121CF7AC30087181B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
