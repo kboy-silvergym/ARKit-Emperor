@@ -12,12 +12,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let menu: [String] = [
-        "Practice",
-        "Gesture",
         "Doodle",
         "Doodle2",
         "CustomModel",
-        "Material",
         "Picture",
         "Action",
         "Bubble",
@@ -31,7 +28,6 @@ class MenuViewController: UIViewController {
         "Memo",
         "Mirror",
         "BusinessCard",
-        "Remote",
     ]
     
     override func viewDidLoad() {

@@ -19,26 +19,6 @@ The Emperor give you the most practical ARKit samples ever.
 
 # Samples
 
-## Practice
-
-|Place infront of camera|Place same Y with Camera|Place in front of tapped|Place to plane|
-|:--:|:--:|:--:|:--:|
-|<img src="images/0.gif" width=140>|<img src="images/1.gif" width=140>|<img src="images/2.gif" width=140>|<img src="images/3-0.gif" width=140>|
-
-|Look at me|Look as same with me|Shoot|Hold|
-|:--:|:--:|:--:|:--:|
-|<img src="images/4.gif" width=140>|<img src="images/5.gif" width=140>|<img src="images/6.gif" width=140>|<img src="images/7.gif" width=140>|
-
-The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Practice)
-
-## Gesture
-
-|Scale|Rotation|
-|:--:|:--:|
-|<img src="images/scale.gif" width=140>|<img src="images/rotate.gif" width=140>|
-
-The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Gesture)
-
 ## Doodle
 
 <img src="images/drawing.gif" width=140>
@@ -62,16 +42,6 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 You can create 3D model by code using bezier path
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/CustomModel)
-
-## Material
-
-|Lightning Model|Material Property|Intesity|
-|:--:|:--:|:--:|
-|<img src="images/lightning_model.gif" width=140>|<img src="images/material_property.gif" width=140>|<img src="images/intensity.gif" width=140>|
-
-Let's debug how to change the appearance of node.
-
-The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/Material)
 
 ## Placing pictures
 
@@ -197,18 +167,6 @@ Augmented business card. If you register the image of your card, ARKit2.0 detect
 If you get the error (`Make sure that all reference images are greater than 100 pixels and have a positive physical size in meters.`), check [the stack overflow](https://stackoverflow.com/questions/49006651/invalid-reference-image-arkit-1-5).
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/BusinessCard)
-
-## Detecting your Remote (ARKit 2.0~)
-
-<img src="images/remote.gif" width=140>
-
-Using ARKit 2.0,  now you can scan 3D object.
-
-The code is **WIP**. Wait a days to be completed..
-
-Note that the Apple doesn't recommend you to use ARObjectScanningConfiguration for production use.
-
->ARObjectScanningConfiguration is for use only in development scenarios. High-fidelity spatial mapping has a high performance and energy cost, and disables ARKit features not necessary for reference object scanning. To produce AR experiences for end users, use ARWorldTrackingConfiguration. https://developer.apple.com/documentation/arkit/arobjectscanningconfiguration
 
 # Author
 
