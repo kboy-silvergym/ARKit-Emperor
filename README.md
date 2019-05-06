@@ -124,7 +124,7 @@ If you show feature points like custom1 or custom2, chek [the code](https://gith
 |:--:|:--:|
 |<img src="images/plane.gif" width=140>|<img src="images/plane2.gif" width=140>|
 
-The plane detection can be available by ARKit 1.0, but this richer (available for not only rectangle) detection is available by 1.5.
+The plane detection is available from ARKit 1.0, but this richer (available for not only rectangle) detection is available from 1.5.
 
 The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/ARKit-Emperor/View/PlaneDetection)
 
