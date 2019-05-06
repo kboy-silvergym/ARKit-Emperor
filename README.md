@@ -170,7 +170,7 @@ The code is [here](https://github.com/kboy-silvergym/ARKit-Emperor/tree/master/A
 
 # Author
 
-<img src ="images/kboy1.jpg" width=140>
+<img src ="ihttps://avatars3.githubusercontent.com/u/17683316?s=460&v=4" width=140>
 
 **KBOY (Kei Fujikawa)**
 
